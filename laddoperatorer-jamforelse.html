@@ -46,6 +46,12 @@
   .ph{border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--muted);background:var(--gray)}
   a{color:#111;text-decoration:underline;text-decoration-color:var(--cn);text-underline-offset:2px}
   a:hover{color:var(--cn-dark)}
+  .tag{display:inline-block;background:#111;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:8px 20px 8px 26px;transform:skewX(-14deg);line-height:1;margin:0 0 4px}
+  .tag>span{display:inline-block;transform:skewX(14deg)}
+  .tag.green{background:var(--cn);color:#111}
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}
+  .quotes blockquote{margin:0;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--cn);border-radius:12px;padding:18px 20px;font-size:.98rem;line-height:1.55}
+  .quotes cite{display:block;margin-top:12px;font-style:normal;font-weight:600;font-size:.85rem;color:var(--muted)}
   footer{color:var(--muted);font-size:.85rem;padding:30px 0}
 </style>
 </head>
@@ -170,8 +176,23 @@
   </section>
 
   <section>
-    <h2>Kundcase</h2>
-    <div class="ph">Plats för riktiga kundcase och citat från BRF:er, samfälligheter och fastighetsägare (namn, ort, antal uttag, resultat). Fyll i före publicering – autentiska omdömen stärker trovärdigheten (E-E-A-T) och citerbarheten.</div>
+    <span class="tag green"><span>Kundröster · migration</span></span>
+    <h2>Vad säger fastighetsägare som bytt till ChargeNode?</h2>
+    <p>I en enkät 2026 svarade <strong>16 kunder</strong> som migrerat sin laddning till ChargeNode. Snittbetyget för hur troligt de skulle rekommendera ChargeNode var <strong>9,1 av 10</strong>, och själva migrationen fick <strong>4,6 av 5</strong>. Ett tydligt mönster: många bytte när deras tidigare leverantör gick i konkurs eller lade ned tjänsten – och lyfter fram ChargeNodes kundportal, enkelhet och support.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="n">9,1/10</div><div class="l">skulle rekommendera ChargeNode (snitt, 16 svar)</div></div>
+      <div class="kpi"><div class="n">4,6/5</div><div class="l">nöjdhet med själva migrationen</div></div>
+      <div class="kpi"><div class="n">12 av 16</div><div class="l">gav 9–10 i rekommendation (ambassadörer)</div></div>
+      <div class="kpi"><div class="n">Vanligast</div><div class="l">byte när tidigare leverantör gick i konkurs eller lade ned</div></div>
+    </div>
+    <div class="quotes">
+      <blockquote>”Gav ett seriöst intryck, inte ett 'säljigt' intryck. Allt gick supersmidigt och jag har inget att klaga på – gör det bara.”<cite>Petter Andersson · Contractor</cite></blockquote>
+      <blockquote>”Det var förvånansvärt enkelt och gick väldigt, väldigt smärtfritt. Inkoppling av nya användare kan göras av vår egen administratör – vad mer kan man begära?”<cite>Erik Hedenblad · Rödgranen Samfällighet, Köping</cite></blockquote>
+      <blockquote>”ChargeNode kunde visa en bra kundportal med full överblick för oss som fastighetsägare – lätt att uppdatera användare och behörigheter och att se förbrukning.”<cite>Jessica Kenell · CA Fastigheter</cite></blockquote>
+      <blockquote>”Vi är mycket nöjda kunder, och våra medlemmar är också mycket nöjda. Allt gick enkelt och smidigt, med bra kommunikation.”<cite>Rolf Svensson · Brf Vävmästaren, Halmstad</cite></blockquote>
+      <blockquote>”Bytet var enkelt, supporten snabb och hjälpsam och administrationen av laddstolparna enkel – och ni meddelar om någon laddare är offline.”<cite>Agnetha Lagus · Kommunfastigheter i Knivsta</cite></blockquote>
+    </div>
+    <p class="note">Källa: ChargeNodes kundenkät bland migrerade kunder, 2026 (16 svar). Citaten återges lätt redigerade (stavning/korta strykningar); tidigare leverantörer anonymiserade.</p>
   </section>
 
   <section>
@@ -314,6 +335,13 @@ document.getElementById('tblSmart').innerHTML = Object.entries(D.smart).map(([o,
  {"@type":"Question","name":"Hur fungerar debitering av laddning till boende i en BRF?","acceptedAnswer":{"@type":"Answer","text":"En laddtjänst mäter förbrukningen per uttag och debiterar varje användare individuellt via app, laddbricka eller faktura. Elkostnaden kan vidarefaktureras till föreningen eller fastigheten. Kontrollera individuell mätning, stöd för besöksladdning och om systemet är öppet (OCPP/roaming) eller slutet."}},
  {"@type":"Question","name":"Vad är skillnaden mellan ett öppet och ett slutet laddsystem?","acceptedAnswer":{"@type":"Answer","text":"Ett öppet, OCPP-baserat system låter fastigheten byta tjänsteleverantör utan att byta hårdvara och stödjer roaming för besökare. Ett slutet system låser fastigheten till en leverantör."}},
  {"@type":"Question","name":"Vilka laddoperatörer passar för BRF, samfällighet och fastighet?","acceptedAnswer":{"@type":"Answer","text":"I segmentet destinations-/AC-laddning finns bl.a. ChargeNode, Vattenfall InCharge, Voltiva, Monta, Virta, E.ON Drive, Eways/KGK, Waybler och Milepost. Välj efter debiteringslösning, svensk support, öppet system (OCPP) och dynamisk lastbalansering."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"ChargeNode laddlösning för fastighet, BRF och samfällighet","provider":{"@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","bestRating":"5","worstRating":"1","ratingCount":"16"},"review":[
+ {"@type":"Review","author":{"@type":"Person","name":"Petter Andersson"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Gav ett seriöst intryck, inte ett säljigt intryck. Allt gick supersmidigt och jag har inget att klaga på."},
+ {"@type":"Review","author":{"@type":"Person","name":"Erik Hedenblad"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Det var förvånansvärt enkelt och gick väldigt smärtfritt. Inkoppling av nya användare kan göras av vår egen administratör."},
+ {"@type":"Review","author":{"@type":"Person","name":"Jessica Kenell"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"ChargeNode kunde visa en bra kundportal med full överblick för oss som fastighetsägare."}
 ]}
 </script>
 </body>
