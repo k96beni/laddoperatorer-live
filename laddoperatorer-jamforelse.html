@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laddoperatörer i Sverige 2026 – neutral jämförelse (marknadsandel, omsättning, betyg, funktioner)</title>
+<meta name="description" content="Neutral, källbelagd jämförelse av publika laddoperatörer för BRF, samfällighet, förening, företag och fastighetsbolag i Sverige 2026: marknadsandel för AC-laddning, omsättningsutveckling, kundbetyg, geografisk täckning, uttag per site och funktioner. Data från NOBIL, allabolag och publika betygskällor.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://chargenode.eu/laddoperatorer-jamforelse">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{--ink:#111111;--muted:#555555;--line:#E4E4E4;--cn:#1EBE69;--cn-dark:#0E7A42;--yellow:#FFDE13;--bg:#FBFBFB;--card:#FFFFFF;--gray:#F7F7F7;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.6 "Circular XX","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:980px;margin:0 auto;padding:24px;}
+  header.hero{background:linear-gradient(135deg,#111111,#1F1F1F);color:#fff;padding:52px 0;}
+  h1{font-size:2.1rem;line-height:1.08;letter-spacing:-.02em;margin:0 0 10px;font-weight:500}
+  .lead{font-size:1.1rem;color:#AAAAAA;max-width:70ch}
+  .updated{font-size:.85rem;color:#AAAAAA;margin-top:14px}
+  h2{font-size:1.5rem;margin:46px 0 8px;font-weight:500;letter-spacing:-.01em}
+  h2::before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--cn);margin-right:10px;vertical-align:middle}
+  h3{font-size:1.12rem;margin:22px 0 6px;font-weight:500}
+  .muted{color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0;box-shadow:0 4px 24px rgba(0,0,0,.06)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .kpi .n{font-size:1.7rem;font-weight:500;color:var(--ink)}
+  .kpi .l{font-size:.83rem;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:.92rem;margin:8px 0}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:700;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr.cn td{background:rgba(30,190,105,.10);font-weight:600}
+  .chartbox{position:relative;height:340px}
+  .chartbox.tall{height:430px}
+  .note{font-size:.84rem;color:var(--muted);border-left:3px solid var(--cn);padding:6px 12px;margin:10px 0}
+  .cards5{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:14px 0}
+  .rcard{border:1px solid var(--line);border-radius:12px;padding:14px;color:#fff}
+  .rcard .r{font-size:.8rem;opacity:.95}
+  .rcard .b{font-size:1.4rem;font-weight:700}
+  .yes{color:var(--cn-dark);font-weight:600}.no{color:#B23B3B}.maybe{color:#9a7d16}
+  details{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--card)}
+  summary{font-weight:600;cursor:pointer}
+  .cta{background:#111111;color:#fff;border-radius:16px;padding:28px;margin:26px 0;text-align:center}
+  .cta a{display:inline-block;margin-top:12px;background:var(--cn);color:#111;padding:12px 24px;border-radius:4px;text-decoration:none;font-weight:700}
+  .ph{border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--muted);background:var(--gray)}
+  a{color:#111;text-decoration:underline;text-decoration-color:var(--cn);text-underline-offset:2px}
+  a:hover{color:var(--cn-dark)}
+  footer{color:var(--muted);font-size:.85rem;padding:30px 0}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <h1>Laddoperatörer i Sverige 2026 – en neutral jämförelse</h1>
+  <p class="lead">Marknadsandel, omsättning, kundbetyg, geografisk täckning och funktioner för publika laddoperatörer i segmentet <strong>BRF, samfällighet, förening, företag och fastighetsbolag</strong>. Data från NOBIL, allabolag och publika betygskällor – samma metod för alla aktörer.</p>
+  <p class="updated">Senast uppdaterad 9 juli 2026 · Sammanställt av ChargeNode · <a style="color:#fff" href="laddoperatorer-metod.html">Metod &amp; källor</a></p>
+</div></header>
+
+<main class="wrap">
+
+  <div class="kpis">
+    <div class="kpi"><div class="n">18,8 %</div><div class="l">ChargeNodes andel av publik AC-laddning – störst i Sverige</div></div>
+    <div class="kpi"><div class="n">9 400</div><div class="l">publika AC-uttag hos ChargeNode</div></div>
+    <div class="kpi"><div class="n">1 133</div><div class="l">laddplatser (sites) i hela landet</div></div>
+    <div class="kpi"><div class="n">4,3/5</div><div class="l">app-betyg (753 betyg, iOS) – bland de högsta</div></div>
+  </div>
+
+  <section>
+    <h2>Vem är störst på publik AC-laddning i Sverige?</h2>
+    <p><strong>ChargeNode är den största operatören av publik AC-laddning i Sverige</strong> med 18,8 % av alla publika AC-uttag (juli 2026), före Vattenfall InCharge (12,1 %) och Voltiva (5,0 %). Måttet avser destinations-/normalladdning (AC) – inte snabbladdning (DC) längs väg, som domineras av bränslebolag och snabbladdningsspecialister.</p>
+    <div class="card"><div class="chartbox"><canvas id="chartShare"></canvas></div></div>
+    <table><thead><tr><th>Operatör</th><th class="num">AC-uttag</th><th class="num">Marknadsandel</th><th class="num">Sites</th><th class="num">Uttag/site (median)</th></tr></thead><tbody id="tblOperators"></tbody></table>
+    <p class="note">Marknadsandel = operatörens publika AC-uttag ÷ samtliga publika AC-uttag i Sverige (NOBIL, 2026-07-09).</p>
+  </section>
+
+  <section>
+    <h2>Växer ChargeNode – eller står marknaden still?</h2>
+    <p>ChargeNodes andel av publik AC-laddning har ökat varje mätning sedan mars 2026 (17,8 % → 18,8 %), medan AC-marknaden totalt är i stort sett oförändrad i storlek. ChargeNode tar alltså andel.</p>
+    <div class="card"><div class="chartbox"><canvas id="chartTrend"></canvas></div></div>
+    <p class="note">AC-marknadsandel per operatör och mätpunkt (NOBIL). April 2025 saknar uttagsnivå och ingår inte i denna serie.</p>
+  </section>
+
+  <section>
+    <h2>Vem växer mest? Nettoförändring i publika uttag sedan april 2025</h2>
+    <p>Sedan april 2025 har ChargeNode ökat med <strong>+5 273 publika uttag</strong> – mer än dubbelt så mycket som näst största aktör. Flera etablerade aktörer har istället minskat sitt publika bestånd.</p>
+    <div class="card"><div class="chartbox tall"><canvas id="chartGrowth"></canvas></div></div>
+    <p class="note">Nettoförändring = antal publika uttag juli 2026 minus april 2025 (NOBIL). Speglar både nyinstallation och operatörsbyten/migrering. April 2025 mäts på deklarerat antal laddpunkter per station.</p>
+  </section>
+
+  <section>
+    <h2>Hur ser marknadsandelen ut i olika delar av Sverige?</h2>
+    <p>ChargeNode är marknadsledande bland laddoperatörerna i samtliga fem regioner – starkast i <strong>Sydsverige (25 %)</strong>. I de största stadskärnorna dominerar kommunala parkeringsbolag (i "Övriga"); operatörer som ChargeNode är störst i förorter, mindre orter och fastighetsnära lägen, vilket speglar segmentet BRF/fastighet.</p>
+    <div class="card"><div class="chartbox"><canvas id="chartRegion"></canvas></div></div>
+    <h3>ChargeNodes täckning per region</h3>
+    <div class="cards5" id="coverageCards"></div>
+    <h3>AC-marknadsandel per region (%)</h3>
+    <div style="overflow-x:auto"><table><thead><tr><th>Region</th><th class="num">AC-uttag</th><th class="num">ChargeNode</th><th class="num">Vattenfall</th><th class="num">Voltiva</th><th class="num">Monta</th><th class="num">Eways</th><th class="num">Övriga</th></tr></thead><tbody id="tblRegion"></tbody></table></div>
+    <h3>Topp 5 städer (flest publika AC-uttag)</h3>
+    <div style="overflow-x:auto"><table><thead><tr><th>Stad</th><th class="num">AC-uttag</th><th class="num">ChargeNode</th><th>Störst i staden</th></tr></thead><tbody id="tblCity"></tbody></table></div>
+    <p class="note">Regionindelning: grupperade län. "Övriga" inkluderar bl.a. kommunala parkeringsbolag. Se även regionala sidor: <a href="laddoperatorer-stockholm.html">Stockholm</a>, <a href="laddoperatorer-goteborg.html">Göteborg</a>, <a href="laddoperatorer-malmo.html">Malmö</a>.</p>
+  </section>
+
+  <section>
+    <h2>Hur har operatörernas omsättning utvecklats?</h2>
+    <p>Bland de renodlade svenska laddoperatörerna är ChargeNode i särklass störst även i omsättning. Siffrorna nedan avser nettoomsättning per bolag och räkenskapsår.</p>
+    <div class="card"><div class="chartbox"><canvas id="chartRev"></canvas></div></div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Bolag</th><th class="num">2022</th><th class="num">2023</th><th class="num">2024</th><th class="num">2025</th><th class="num">Anställda</th><th>Kommentar</th></tr></thead><tbody id="tblRev"></tbody></table></div>
+    <p class="note" id="revNote"></p>
+    <p class="note" id="revSrc"></p>
+  </section>
+
+  <section>
+    <h2>Lönsamhet och finansiell stabilitet</h2>
+    <p><strong>ChargeNode är den enda operatören i jämförelsen som var lönsam 2025</strong> – resultat efter finansiella poster +6,5 MSEK och EBITA ~13,7 MSEK. Övriga svenska renodlade laddbolag gick med förlust på EBITDA-nivå. En stabil, lönsam leverantör är en trygghet för en förening eller fastighetsägare som binder sig långsiktigt (ChargeNodes soliditet 53,6 %).</p>
+    <div class="card"><div class="chartbox"><canvas id="chartEbitda"></canvas></div></div>
+    <p class="note">EBITDA per senaste räkenskapsår (Voltiva/Waybler 2025, Milepost 2024). ChargeNode visas som EBITA (~13,7 MSEK; EBITDA ~14,1). Vattenfall, E.ON, Monta och Virta saknar svenskt renodlat laddbolag med isolerbart resultat och kan därför inte visas. Källa: årsredovisningar/allabolag – övriga bör verifieras mot årsredovisning.</p>
+  </section>
+
+  <section>
+    <h2>Hur nöjda är kunderna – vad säger betygen?</h2>
+    <p>Bland operatörer med ett meningsfullt antal betyg har ChargeNode ett av de högsta app-betygen (4,3/5 på 753 betyg), i nivå med Monta och över de flesta konkurrenter. App-betyget speglar användarupplevelsen (betalning, support, drift) mer specifikt än bolagsövergripande Trustpilot-omdömen.</p>
+    <div class="card"><div class="chartbox"><canvas id="chartRating"></canvas></div></div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Operatör</th><th class="num">App Store (iOS)</th><th class="num">Trustpilot</th><th>Trustpilot avser</th></tr></thead><tbody id="tblRating"></tbody></table></div>
+    <p class="note">App Store-betyg avser svensk butik där sådan finns, per 2026-07-09. Trustpilot avser i flera fall hela moderbolaget (t.ex. Vattenfall, E.ON, Eways) – anges i tabellen. Betyg är ögonblicksbilder.</p>
+  </section>
+
+  <section>
+    <h2>Hur många uttag har operatörerna per site?</h2>
+    <p>Antal uttag per plats (site) säger något om vilken typ av anläggningar en operatör bygger. ChargeNode och Eways har flest uttag per site i snitt (~8–10), typiskt för större fastighets- och besöksanläggningar.</p>
+    <div class="card"><div class="chartbox tall"><canvas id="chartSites"></canvas></div></div>
+    <p class="note">Fördelning av sites efter antal uttag (NOBIL, publika uttag, 2026-07-09).</p>
+  </section>
+
+  <section>
+    <h2>Om leverantörerna – huvudkontor och plattform</h2>
+    <p>Var ett bolag har sitt huvudkontor och om det driver en <strong>egen laddplattform</strong> eller bygger på en <strong>tredjeparts</strong> system påverkar långsiktig kontroll, vidareutveckling och support. ChargeNode, Voltiva och Monta driver egen plattform; Eways bygger på ChargePanel.</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Operatör</th><th>Huvudkontor</th><th>Plattform</th></tr></thead><tbody id="tblProvider"></tbody></table></div>
+    <p class="note">Huvudkontor per bolagets säte. "Egen" = egenutvecklad plattform; "Tredjepart" = bygger på annan leverantörs system. "Ej bekräftat" = ej verifierat via offentlig källa.</p>
+  </section>
+
+  <section>
+    <h2>Vad erbjuder operatörerna – funktionsjämförelse</h2>
+    <p>Öppet system (OCPP), betalsätt, svensk support, roaming och lastbalansering är avgörande vid val av laddtjänst för en fastighet. Nedan är en sammanställning från operatörernas publika information (2026-07). "Ej bekräftat" = inte hittat på offentlig sida.</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Operatör</th><th>Öppet / OCPP</th><th>Betalsätt</th><th>Svensk support</th><th>Roaming</th><th>Lastbalansering</th></tr></thead><tbody id="tblFeat"></tbody></table></div>
+    <p class="note">Drifttid/SLA redovisas inte publikt av operatörerna – begär garanterad tillgänglighet i offert. Uppgifterna bör verifieras mot respektive leverantör före beslut.</p>
+  </section>
+
+  <section>
+    <h2>Smart laddning och energioptimering</h2>
+    <p>För fastigheter är energioptimering ofta det som sänker kostnaden mest: <strong>avresetidsstyrning</strong> (bilen klar till vald tid), <strong>peak shaving</strong> (kapa dyra effekttoppar mot fastighetens abonnemang) och <strong>spotprisoptimering</strong> (ladda när timpriset är lägst). ChargeNode och Monta är de enda i jämförelsen som erbjuder alla tre; ChargeNode är den enda svenska renodlade AC-operatören med hela uppsättningen.</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Operatör</th><th>Avresetidsstyrning</th><th>Peak shaving</th><th>Spotprisoptimering</th></tr></thead><tbody id="tblSmart"></tbody></table></div>
+    <p class="note">Sammanställt från operatörernas publika sidor (2026-07). "Ej bekräftat" = inte hittat på offentlig sida (inte nödvändigtvis ett nej). Vissa aktörer erbjuder funktionerna i en separat hemladdningstjänst snarare än i fastighetserbjudandet.</p>
+  </section>
+
+  <section>
+    <h2>Så väljer en BRF, samfällighet eller fastighetsägare laddoperatör</h2>
+    <details open><summary>Hur fungerar betalning och debitering av laddning till boende?</summary>
+      <p>En laddtjänst mäter förbrukningen per uttag och debiterar varje användare individuellt (app, laddbricka eller faktura) och kan vidarefakturera elkostnaden till föreningen eller fastigheten. Kontrollera: individuell mätning per uttag, stöd för gäst-/besöksladdning och om systemet är öppet (roaming) eller slutet.</p></details>
+    <details><summary>Vad ska man tänka på kring support och kundtjänst?</summary>
+      <p>Fråga efter svensk support, öppettider, garanterad drifttid (uptime/SLA) och åtgärdstid vid fel. Ett högt app-betyg är en indikation på hur väl betalning och support fungerar i praktiken.</p></details>
+    <details><summary>Öppet eller slutet laddsystem – vad är skillnaden?</summary>
+      <p>Ett öppet, OCPP-baserat system låter fastigheten byta tjänsteleverantör utan att byta hårdvara och stödjer roaming för besökare. Ett slutet system låser fastigheten till en leverantör. Öppna standarder (OCPP, ISO 15118) minskar inlåsning.</p></details>
+    <details><summary>Hur många laddpunkter behövs och hur skalar man?</summary>
+      <p>Dynamisk lastbalansering gör att fler uttag kan installeras utan att uppgradera elservisen. Börja med en andel av platserna och skala med efterfrågan – välj en operatör som stödjer dynamisk lastbalansering.</p></details>
+  </section>
+
+  <section>
+    <h2>Ordlista – laddning för fastighet</h2>
+    <details><summary>AC-laddning (växelström)</summary><p>Normalladdning, oftast 3,7–22 kW, som passar där bilen står parkerad länge (hemma, arbetsplats, besöksparkering). Dominerar destinationsladdning för BRF och fastighet.</p></details>
+    <details><summary>DC-laddning (likström)</summary><p>Snabbladdning, ofta 50–350 kW, för korta stopp längs väg. Kräver dyrare utrustning och kraftigare elanslutning.</p></details>
+    <details><summary>OCPP (Open Charge Point Protocol)</summary><p>Öppen standard för kommunikation mellan laddbox och back-end. Gör att en fastighet kan byta tjänsteleverantör utan att byta hårdvara.</p></details>
+    <details><summary>Lastbalansering</summary><p>Fördelar tillgänglig eleffekt mellan laddpunkter (och fastighetens övriga förbrukning) så att fler bilar kan ladda utan att säkringen löser ut. Dynamisk lastbalansering anpassar i realtid.</p></details>
+    <details><summary>Debitering</summary><p>Individuell mätning och fakturering av laddning per användare, samt vidarefakturering av elkostnad till förening/fastighet.</p></details>
+    <details><summary>Roaming</summary><p>Möjligheten att ladda i andra operatörers nät med samma app/bricka, och att andra operatörers kunder kan ladda hos dig. Bygger ofta på OCPI.</p></details>
+    <details><summary>Effekt (kW) och energi (kWh)</summary><p>Effekt (kW) är laddningshastigheten; energi (kWh) är hur mycket som laddats. Debitering sker normalt per kWh.</p></details>
+  </section>
+
+  <section>
+    <h2>Kundcase</h2>
+    <div class="ph">Plats för riktiga kundcase och citat från BRF:er, samfälligheter och fastighetsägare (namn, ort, antal uttag, resultat). Fyll i före publicering – autentiska omdömen stärker trovärdigheten (E-E-A-T) och citerbarheten.</div>
+  </section>
+
+  <section>
+    <h2>ChargeNode i siffror 2023–2025</h2>
+    <div style="overflow-x:auto"><table><thead><tr><th>Nyckeltal</th><th class="num">2023</th><th class="num">2024</th><th class="num">2025</th></tr></thead>
+      <tbody>
+        <tr><td>Omsättning (MSEK)</td><td class="num">242,3</td><td class="num">211,2</td><td class="num">257,9</td></tr>
+        <tr><td>Tillväxt (%)</td><td class="num">+93,4</td><td class="num">−12,8</td><td class="num">+22,1</td></tr>
+        <tr><td>Resultat efter fin. poster (MSEK)</td><td class="num">−32,6</td><td class="num">−15,9</td><td class="num">+6,5</td></tr>
+        <tr><td>Medelantal anställda</td><td class="num">–</td><td class="num">47</td><td class="num">42</td></tr>
+        <tr><td>Installerade ladduttag (publika)</td><td class="num">–</td><td class="num">–</td><td class="num">9 644</td></tr>
+      </tbody></table></div>
+    <p class="note">Källa: Charge Node Europé AB, <strong>officiell årsredovisning 2025</strong> (org.nr 559188-1130). 2025 vände bolaget till vinst (resultat efter finansiella poster). Ladduttag: NOBIL 2026-07.</p>
+  </section>
+
+  <div class="cta">
+    <div style="font-size:1.2rem;font-weight:700">Vill du ha laddning för din BRF, samfällighet eller fastighet?</div>
+    <div class="muted" style="color:#eafaf3">Sveriges största operatör av publik AC-laddning – öppet OCPP-system, svensk support dygnet runt och dynamisk lastbalansering.</div>
+    <a href="https://chargenode.eu/kontakt">Begär offert</a>
+  </div>
+
+  <section>
+    <h2>Metod och källor</h2>
+    <p><strong>Samma metod, källor och datum för alla operatörer, inklusive ChargeNode.</strong> Inga vikter eller urval som gynnar en part; ofördelaktiga fakta redovisas öppet. Fullständig metod: <a href="laddoperatorer-metod.html">metod &amp; källor</a>.</p>
+    <ul>
+      <li><strong>Marknadsandel &amp; geografi:</strong> NOBIL API v3 (publika ladduttag, Sverige). AC/DC via laddläge. Andel = uttag ÷ alla publika uttag i kategorin.</li>
+      <li><strong>Omsättning:</strong> allabolag.se (nettoomsättning per räkenskapsår). Utländska bolag (Monta, Virta, Elaway) och koncerner (Vattenfall, E.ON) ingår ej.</li>
+      <li><strong>Betyg:</strong> Trustpilot, App Store, Google Play, med antal recensioner och scope-flagga (bolag vs app). Ej verifierbart → redovisas som saknas.</li>
+      <li><strong>Funktioner:</strong> operatörernas publika sidor (2026-07); "Ej bekräftat" där uppgift saknas.</li>
+    </ul>
+    <p class="muted">Sammanställt av ChargeNode. Data per 2026-07-09 och uppdateras löpande. Uppgifter om andra bolag bygger på öppna källor och kan innehålla fel – hör av dig för korrigering.</p>
+  </section>
+
+</main>
+
+<footer><div class="wrap">Neutral branschjämförelse sammanställd av ChargeNode. Källor: NOBIL (CC BY 4.0), allabolag.se, Trustpilot, App Store, Google Play. Senast uppdaterad 2026-07-09.</div></footer>
+
+<script id="data" type="application/json">
+{"stamp": "2026-07-13", "national_ac_total": 49122, "operators": [{"name": "ChargeNode", "ac": 9400, "share": 19.1, "sites": 1135, "outlets": 9652, "per_site_avg": 8.5, "per_site_median": 5}, {"name": "Vattenfall InCharge", "ac": 6060, "share": 12.3, "sites": 930, "outlets": 6938, "per_site_avg": 7.5, "per_site_median": 4.0}, {"name": "Voltiva", "ac": 2521, "share": 5.1, "sites": 585, "outlets": 2586, "per_site_avg": 4.4, "per_site_median": 2}, {"name": "Monta", "ac": 2202, "share": 4.5, "sites": 543, "outlets": 2832, "per_site_avg": 5.2, "per_site_median": 4}, {"name": "Virta", "ac": 2117, "share": 4.3, "sites": 538, "outlets": 2521, "per_site_avg": 4.7, "per_site_median": 4.0}, {"name": "E.ON", "ac": 2104, "share": 4.3, "sites": 338, "outlets": 2207, "per_site_avg": 6.5, "per_site_median": 4.0}, {"name": "Eways", "ac": 1973, "share": 4.0, "sites": 209, "outlets": 2049, "per_site_avg": 9.8, "per_site_median": 6}, {"name": "Waybler", "ac": 390, "share": 0.8, "sites": 73, "outlets": 390, "per_site_avg": 5.3, "per_site_median": 4}, {"name": "Milepost", "ac": 1207, "share": 2.5, "sites": 242, "outlets": 1246, "per_site_avg": 5.1, "per_site_median": 4.0}], "top_cities": [{"name": "Göteborg", "ac_total": 7371, "shares": {"ChargeNode": 4.8, "Vattenfall InCharge": 29.2, "Voltiva": 0.2, "Monta": 2.3, "Virta": 0.7, "E.ON": 0.5, "Eways": 2.9, "Waybler": 0.2, "Milepost": 0.0, "Övriga": 59.1}}, {"name": "Stockholm", "ac_total": 6395, "shares": {"ChargeNode": 3.0, "Vattenfall InCharge": 3.8, "Voltiva": 0.8, "Monta": 1.0, "Virta": 0.1, "E.ON": 0.1, "Eways": 1.0, "Waybler": 0.1, "Milepost": 3.8, "Övriga": 86.4}}, {"name": "Malmö", "ac_total": 1285, "shares": {"ChargeNode": 13.6, "Vattenfall InCharge": 4.8, "Voltiva": 5.6, "Monta": 1.1, "Virta": 10.4, "E.ON": 23.1, "Eways": 10.0, "Waybler": 0.2, "Milepost": 0.0, "Övriga": 31.2}}, {"name": "Johanneshov", "ac_total": 1134, "shares": {"ChargeNode": 0.0, "Vattenfall InCharge": 4.8, "Voltiva": 0.0, "Monta": 0.0, "Virta": 0.0, "E.ON": 0.0, "Eways": 2.2, "Waybler": 0.0, "Milepost": 1.7, "Övriga": 91.4}}, {"name": "Örebro", "ac_total": 939, "shares": {"ChargeNode": 33.8, "Vattenfall InCharge": 1.3, "Voltiva": 1.0, "Monta": 31.2, "Virta": 7.0, "E.ON": 8.4, "Eways": 1.5, "Waybler": 0.0, "Milepost": 0.0, "Övriga": 15.9}}], "regions": [{"name": "Stockholm–Mälardalen", "ac_total": 17836, "shares": {"ChargeNode": 17.3, "Vattenfall InCharge": 6.9, "Voltiva": 3.0, "Monta": 4.3, "Virta": 4.5, "E.ON": 1.9, "Eways": 3.1, "Waybler": 0.6, "Milepost": 2.4, "Övriga": 56.0}}, {"name": "Västsverige", "ac_total": 16342, "shares": {"ChargeNode": 18.5, "Vattenfall InCharge": 20.5, "Voltiva": 3.3, "Monta": 3.4, "Virta": 2.3, "E.ON": 4.6, "Eways": 2.6, "Waybler": 0.5, "Milepost": 1.4, "Övriga": 42.9}}, {"name": "Sydsverige", "ac_total": 7458, "shares": {"ChargeNode": 25.1, "Vattenfall InCharge": 8.1, "Voltiva": 5.7, "Monta": 3.3, "Virta": 8.9, "E.ON": 12.0, "Eways": 9.4, "Waybler": 0.8, "Milepost": 4.0, "Övriga": 22.8}}, {"name": "Östra Götaland", "ac_total": 2566, "shares": {"ChargeNode": 19.3, "Vattenfall InCharge": 16.6, "Voltiva": 28.3, "Monta": 3.1, "Virta": 0.9, "E.ON": 2.3, "Eways": 2.5, "Waybler": 0.8, "Milepost": 1.9, "Övriga": 24.4}}, {"name": "Norrland & Dalarna", "ac_total": 4920, "shares": {"ChargeNode": 18.8, "Vattenfall InCharge": 9.1, "Voltiva": 5.8, "Monta": 11.2, "Virta": 5.0, "E.ON": 1.2, "Eways": 4.8, "Waybler": 2.6, "Milepost": 4.3, "Övriga": 37.2}}], "customer_overall": {"Övrigt / privat företag": 8232, "Kommun / offentligt": 4528, "Fastighetsbolag": 497, "Energibolag": 483, "Hotell / besöksmål": 271, "Bilhandel / verkstad": 240, "Parkering": 211, "Handel / köpcentrum": 148, "BRF / samfällighet": 124, "Industri / logistik": 16}, "customer_by_operator": {"ChargeNode": {"coverage_pct": 0.0, "segments": {"Hotell / besöksmål": 18, "Övrigt / privat företag": 12, "Parkering": 10}, "segments_pct": {"Hotell / besöksmål": 45.0, "Övrigt / privat företag": 30.0, "Parkering": 25.0}}, "Vattenfall InCharge": {"coverage_pct": 0.0, "segments": {"Övrigt / privat företag": 15}, "segments_pct": {"Övrigt / privat företag": 100.0}}, "Voltiva": {"coverage_pct": 5.0, "segments": {"Energibolag": 87, "Övrigt / privat företag": 36}, "segments_pct": {"Energibolag": 71.0, "Övrigt / privat företag": 29.0}}, "Monta": {"coverage_pct": 100.0, "segments": {"Övrigt / privat företag": 1902, "Bilhandel / verkstad": 240, "Fastighetsbolag": 165, "Kommun / offentligt": 126, "Energibolag": 117, "BRF / samfällighet": 107, "Parkering": 71, "Hotell / besöksmål": 60, "Handel / köpcentrum": 38, "Industri / logistik": 6}, "segments_pct": {"Övrigt / privat företag": 67.0, "Bilhandel / verkstad": 8.0, "Fastighetsbolag": 6.0, "Kommun / offentligt": 4.0, "Energibolag": 4.0, "BRF / samfällighet": 4.0, "Parkering": 3.0, "Hotell / besöksmål": 2.0, "Handel / köpcentrum": 1.0, "Industri / logistik": 0.0}}, "Virta": {"coverage_pct": 2.0, "segments": {"Kommun / offentligt": 38, "Energibolag": 8}, "segments_pct": {"Kommun / offentligt": 83.0, "Energibolag": 17.0}}, "E.ON": {"coverage_pct": 2.0, "segments": {"Energibolag": 36, "Industri / logistik": 4}, "segments_pct": {"Energibolag": 90.0, "Industri / logistik": 10.0}}, "Eways": {"coverage_pct": 51.0, "segments": {"Övrigt / privat företag": 572, "Energibolag": 173, "Kommun / offentligt": 109, "Fastighetsbolag": 100, "Handel / köpcentrum": 70, "Hotell / besöksmål": 16, "BRF / samfällighet": 6, "Industri / logistik": 2}, "segments_pct": {"Övrigt / privat företag": 55.0, "Energibolag": 17.0, "Kommun / offentligt": 10.0, "Fastighetsbolag": 10.0, "Handel / köpcentrum": 7.0, "Hotell / besöksmål": 2.0, "BRF / samfällighet": 1.0, "Industri / logistik": 0.0}}, "Waybler": {"coverage_pct": 14.0, "segments": {"Övrigt / privat företag": 33, "Kommun / offentligt": 14, "Hotell / besöksmål": 6, "BRF / samfällighet": 1}, "segments_pct": {"Övrigt / privat företag": 61.0, "Kommun / offentligt": 26.0, "Hotell / besöksmål": 11.0, "BRF / samfällighet": 2.0}}, "Milepost": {"coverage_pct": 0.0, "segments": {}, "segments_pct": {}}}, "site_buckets": {"ChargeNode": {"1–2": 335, "3–5": 248, "6–10": 335, "11–20": 144, "21+": 73}, "Vattenfall InCharge": {"1–2": 379, "3–5": 213, "6–10": 228, "11–20": 67, "21+": 43}, "Voltiva": {"1–2": 295, "3–5": 159, "6–10": 98, "11–20": 26, "21+": 7}, "Monta": {"1–2": 225, "3–5": 179, "6–10": 86, "11–20": 39, "21+": 14}, "Virta": {"1–2": 238, "3–5": 144, "6–10": 119, "11–20": 33, "21+": 4}, "E.ON": {"1–2": 112, "3–5": 111, "6–10": 77, "11–20": 23, "21+": 15}, "Eways": {"1–2": 68, "3–5": 33, "6–10": 61, "11–20": 26, "21+": 21}, "Waybler": {"1–2": 25, "3–5": 26, "6–10": 14, "11–20": 8, "21+": 0}, "Milepost": {"1–2": 61, "3–5": 95, "6–10": 74, "11–20": 9, "21+": 3}}}
+</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const RATINGS = {
+  "ChargeNode":{ios:4.3,iosN:753,tp:null,tpScope:"ingen aktiv profil"},
+  "Vattenfall InCharge":{ios:4.6,iosN:4600,tp:1.2,tpScope:"hela Vattenfall"},
+  "Voltiva":{ios:3.5,iosN:23,tp:2.8,tpScope:"bolaget"},
+  "Monta":{ios:4.4,iosN:1600,tp:2.9,tpScope:"globalt"},
+  "Virta":{ios:3.7,iosN:15,tp:null,tpScope:"ej verifierat"},
+  "E.ON":{ios:3.6,iosN:1100,tp:2.3,tpScope:"hela E.ON Sverige"},
+  "Eways":{ios:2.1,iosN:22,tp:3.4,tpScope:"hela bolaget"},
+  "Waybler":{ios:1.8,iosN:60,tp:3.9,tpScope:"bolaget"},
+  "Milepost":{ios:3.4,iosN:13,tp:null,tpScope:"ingen profil"}
+};
+const CN="#1EBE69", GREY="#BDBDBD";
+const fmt=n=>n.toLocaleString('sv-SE');
+const sv=n=>n==null?'–':n.toString().replace('.',',');
+const cls=v=>v==='Ja'?'yes':(v==='Nej'?'no':'maybe');
+
+/* Operatörer */
+document.getElementById('tblOperators').innerHTML = D.operators.map(o=>
+ `<tr class="${o.name==='ChargeNode'?'cn':''}"><td>${o.name}</td><td class="num">${fmt(o.ac)}</td><td class="num">${sv(o.share)} %</td><td class="num">${fmt(o.sites)}</td><td class="num">${o.per_site_median}</td></tr>`).join('');
+new Chart(chartShare,{type:'bar',data:{labels:D.operators.map(o=>o.name),datasets:[{data:D.operators.map(o=>o.share),backgroundColor:D.operators.map(o=>o.name==='ChargeNode'?CN:GREY)}]},options:{indexAxis:'y',plugins:{legend:{display:false},title:{display:true,text:'Marknadsandel publik AC-laddning, Sverige (%)'}},scales:{x:{ticks:{callback:v=>v+' %'}}}}});
+
+/* Trend */
+const trOps=["ChargeNode","Vattenfall InCharge","Voltiva","Monta","Virta","Eways"];
+const trCol={"ChargeNode":CN,"Vattenfall InCharge":"#1F1F1F","Voltiva":"#555555","Monta":"#888888","Virta":"#AAAAAA","Eways":"#C4C4C4"};
+const snaps=["2026-03","2026-06","2026-07"];
+new Chart(chartTrend,{type:'line',data:{labels:["Mars 2026","Juni 2026","Juli 2026"],
+ datasets:trOps.map(o=>({label:o,data:snaps.map(s=>D.trend[o]?.[s]??null),borderColor:trCol[o],backgroundColor:trCol[o],borderWidth:o==='ChargeNode'?3:2,tension:.2}))},
+ options:{plugins:{title:{display:true,text:'AC-marknadsandel över tid (%)'}},scales:{y:{ticks:{callback:v=>v+' %'}}}}});
+
+/* Nettotillväxt (stolpar) */
+new Chart(chartGrowth,{type:'bar',data:{labels:D.growth.map(g=>g.name),datasets:[{data:D.growth.map(g=>g.net),
+ backgroundColor:D.growth.map(g=>g.name==='ChargeNode'?CN:(g.net<0?'#c98a8a':GREY))}]},
+ options:{indexAxis:'y',plugins:{legend:{display:false},title:{display:true,text:'Nettoförändring i publika uttag sedan april 2025'}},
+ scales:{x:{title:{display:true,text:'antal uttag'}}}}});
+
+/* Region */
+const regOps=["ChargeNode","Vattenfall InCharge","Voltiva","Monta","Eways"];
+document.getElementById('tblRegion').innerHTML = D.regions.map(r=>{const s=r.shares;
+ return `<tr><td>${r.name}</td><td class="num">${fmt(r.ac_total)}</td><td class="num"><strong>${sv(s['ChargeNode'])} %</strong></td><td class="num">${sv(s['Vattenfall InCharge'])} %</td><td class="num">${sv(s['Voltiva'])} %</td><td class="num">${sv(s['Monta'])} %</td><td class="num">${sv(s['Eways'])} %</td><td class="num">${sv(s['Övriga'])} %</td></tr>`;}).join('');
+new Chart(chartRegion,{type:'bar',data:{labels:D.regions.map(r=>r.name),
+ datasets:regOps.map((op,i)=>({label:op,data:D.regions.map(r=>r.shares[op]||0),backgroundColor:op==='ChargeNode'?CN:['#9fb0c0','#c3ced9','#7d93a8','#b9c6d3'][i-1]||GREY}))},
+ options:{plugins:{title:{display:true,text:'AC-marknadsandel per region (%)'}},scales:{y:{ticks:{callback:v=>v+' %'}}}}});
+
+/* Region-täckningskort (färg efter CN-andel) */
+const shadeFor=p=>{const t=Math.max(0,Math.min(1,(p-14)/12));const g=Math.round(125-45*t),b=Math.round(90-30*t);return `rgb(10,${g},${b})`;};
+document.getElementById('coverageCards').innerHTML = D.regions.map(r=>{
+ const cov=D.cn_region[r.name]||{sites:0,uttag:0};const share=r.shares['ChargeNode']||0;
+ return `<div class="rcard" style="background:${shadeFor(share)}"><div class="r">${r.name}</div><div class="b">${sv(share)} %</div><div class="r">${fmt(cov.sites)} sites · ${fmt(cov.uttag)} uttag</div></div>`;}).join('');
+
+/* Städer */
+document.getElementById('tblCity').innerHTML = D.top_cities.map(c=>{let top='',tv=-1;for(const[k,v] of Object.entries(c.shares)){if(v>tv){tv=v;top=k;}}
+ return `<tr><td>${c.name}</td><td class="num">${fmt(c.ac_total)}</td><td class="num">${sv(c.shares['ChargeNode'])} %</td><td>${top} (${sv(tv)} %)</td></tr>`;}).join('');
+
+/* Omsättning */
+const F=D.financials;const fCol={"ChargeNode":CN,"Waybler":"#1F1F1F","Voltiva":"#555555","Milepost":"#888888","Eways":"#AAAAAA"};
+new Chart(chartRev,{type:'line',data:{labels:F.years,datasets:F.companies.map(c=>({label:c.name,data:c.rev,borderColor:fCol[c.name]||GREY,backgroundColor:fCol[c.name]||GREY,borderWidth:c.name==='ChargeNode'?3:2,spanGaps:false,tension:.2}))},
+ options:{plugins:{title:{display:true,text:'Nettoomsättning per bolag (MSEK)'}},scales:{y:{ticks:{callback:v=>v+' Mkr'}}}}});
+document.getElementById('tblRev').innerHTML = F.companies.map(c=>
+ `<tr class="${c.name==='ChargeNode'?'cn':''}"><td>${c.name}<br><span class="muted" style="font-weight:400">${c.entity}</span></td><td class="num">${sv(c.rev[0])}</td><td class="num">${sv(c.rev[1])}</td><td class="num">${sv(c.rev[2])}</td><td class="num">${sv(c.rev[3])}</td><td class="num">${c.emp??'–'}</td><td class="muted">${c.note}</td></tr>`).join('');
+document.getElementById('revNote').textContent = F.excluded_note;
+document.getElementById('revSrc').textContent = F.source_note;
+
+/* EBITDA / lönsamhet */
+const EB=F.companies.filter(c=>c.ebitda!=null);
+new Chart(chartEbitda,{type:'bar',data:{labels:EB.map(c=>c.name),datasets:[{data:EB.map(c=>c.ebitda),
+ backgroundColor:EB.map(c=>c.ebitda>0?(c.name==='ChargeNode'?CN:GREY):'#c98a8a')}]},
+ options:{indexAxis:'y',plugins:{legend:{display:false},title:{display:true,text:'EBITDA 2025 (MSEK) – ChargeNode: EBITA'},
+ tooltip:{callbacks:{afterLabel:c=>EB[c.dataIndex].ebitda_label}}},scales:{x:{title:{display:true,text:'MSEK'}}}}});
+
+/* Betyg */
+const rOps=Object.keys(RATINGS);
+new Chart(chartRating,{type:'bar',data:{labels:rOps,datasets:[{data:rOps.map(o=>RATINGS[o].ios),backgroundColor:rOps.map(o=>o==='ChargeNode'?CN:GREY)}]},
+ options:{plugins:{legend:{display:false},title:{display:true,text:'App-betyg (iOS), 1–5'},tooltip:{callbacks:{afterLabel:c=>RATINGS[rOps[c.dataIndex]].iosN+' betyg'}}},scales:{y:{min:0,max:5}}}});
+document.getElementById('tblRating').innerHTML = rOps.map(o=>{const r=RATINGS[o];
+ return `<tr class="${o==='ChargeNode'?'cn':''}"><td>${o}</td><td class="num">${r.ios?sv(r.ios)+'/5 ('+fmt(r.iosN)+')':'–'}</td><td class="num">${r.tp?sv(r.tp)+'/5':'–'}</td><td class="muted">${r.tpScope}</td></tr>`;}).join('');
+
+/* Uttag per site */
+const buckets=["1–2","3–5","6–10","11–20","21+"];const bcol=["#D7F2E4","#A9E5C6","#6FD3A0","#3BC07D","#1EBE69"];
+new Chart(chartSites,{type:'bar',data:{labels:Object.keys(D.site_buckets),datasets:buckets.map((b,i)=>({label:b+' uttag',data:Object.values(D.site_buckets).map(o=>o[b]),backgroundColor:bcol[i]}))},
+ options:{plugins:{title:{display:true,text:'Antal sites efter antal uttag per site'}},scales:{x:{stacked:true},y:{stacked:true}}}});
+
+/* Funktionsmatris */
+document.getElementById('tblFeat').innerHTML = Object.entries(D.features).map(([o,f])=>
+ `<tr class="${o==='ChargeNode'?'cn':''}"><td>${o}</td><td class="${cls(f.ocpp)}">${f.ocpp}</td><td>${f.payment}</td><td class="${cls(f.support.split(' ')[0])}">${f.support}</td><td class="${cls(f.roaming.split(' ')[0])}">${f.roaming}</td><td class="${cls(f.lb.split(' ')[0])}">${f.lb}</td></tr>`).join('');
+
+/* Leverantörsfakta: HQ + plattform */
+document.getElementById('tblProvider').innerHTML = Object.entries(D.features).map(([o,f])=>
+ `<tr class="${o==='ChargeNode'?'cn':''}"><td>${o}</td><td>${f.hq}</td><td class="${f.platform==='Egen'?'yes':(f.platform.indexOf('Tredjepart')===0?'no':'maybe')}">${f.platform}</td></tr>`).join('');
+
+/* Smart laddning */
+document.getElementById('tblSmart').innerHTML = Object.entries(D.smart).map(([o,s])=>
+ `<tr class="${o==='ChargeNode'?'cn':''}"><td>${o}</td><td class="${cls(s.departure.split(' ')[0])}">${s.departure}</td><td class="${cls(s.peak.split(' ')[0])}">${s.peak}</td><td class="${cls(s.spot.split(' ')[0])}">${s.spot}</td></tr>`).join('');
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+ "headline":"Laddoperatörer i Sverige 2026 – neutral jämförelse",
+ "datePublished":"2026-07-09","dateModified":"2026-07-09",
+ "author":{"@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu"},
+ "publisher":{"@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu"},
+ "about":"Jämförelse av publika laddoperatörer för BRF, samfällighet, förening, företag och fastighetsbolag i Sverige."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Vem är störst på publik AC-laddning i Sverige?","acceptedAnswer":{"@type":"Answer","text":"ChargeNode är den största operatören av publik AC-laddning i Sverige med cirka 18,8 % av alla publika AC-uttag (NOBIL, juli 2026), före Vattenfall InCharge (12,1 %) och Voltiva (5,0 %)."}},
+ {"@type":"Question","name":"Hur fungerar debitering av laddning till boende i en BRF?","acceptedAnswer":{"@type":"Answer","text":"En laddtjänst mäter förbrukningen per uttag och debiterar varje användare individuellt via app, laddbricka eller faktura. Elkostnaden kan vidarefaktureras till föreningen eller fastigheten. Kontrollera individuell mätning, stöd för besöksladdning och om systemet är öppet (OCPP/roaming) eller slutet."}},
+ {"@type":"Question","name":"Vad är skillnaden mellan ett öppet och ett slutet laddsystem?","acceptedAnswer":{"@type":"Answer","text":"Ett öppet, OCPP-baserat system låter fastigheten byta tjänsteleverantör utan att byta hårdvara och stödjer roaming för besökare. Ett slutet system låser fastigheten till en leverantör."}},
+ {"@type":"Question","name":"Vilka laddoperatörer passar för BRF, samfällighet och fastighet?","acceptedAnswer":{"@type":"Answer","text":"I segmentet destinations-/AC-laddning finns bl.a. ChargeNode, Vattenfall InCharge, Voltiva, Monta, Virta, E.ON Drive, Eways/KGK, Waybler och Milepost. Välj efter debiteringslösning, svensk support, öppet system (OCPP) och dynamisk lastbalansering."}}
+]}
+</script>
+</body>
+</html>
