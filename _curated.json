@@ -1,0 +1,284 @@
+{
+ "growth": [
+  {
+   "name": "ChargeNode",
+   "net": 5273
+  },
+  {
+   "name": "Voltiva",
+   "net": 2417
+  },
+  {
+   "name": "Monta",
+   "net": 1647
+  },
+  {
+   "name": "Waybler",
+   "net": 1292
+  },
+  {
+   "name": "Eways",
+   "net": 975
+  },
+  {
+   "name": "Milepost",
+   "net": 819
+  },
+  {
+   "name": "Vattenfall InCharge",
+   "net": -254
+  },
+  {
+   "name": "Virta",
+   "net": -2279
+  },
+  {
+   "name": "E.ON",
+   "net": -7560
+  }
+ ],
+ "cn_region": {
+  "Västsverige": {
+   "sites": 304,
+   "uttag": 3045
+  },
+  "Stockholm–Mälardalen": {
+   "sites": 427,
+   "uttag": 3173
+  },
+  "Sydsverige": {
+   "sites": 225,
+   "uttag": 1928
+  },
+  "Norrland & Dalarna": {
+   "sites": 123,
+   "uttag": 963
+  },
+  "Östra Götaland": {
+   "sites": 54,
+   "uttag": 535
+  }
+ },
+ "financials": {
+  "years": [
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "companies": [
+   {
+    "name": "ChargeNode",
+    "entity": "Charge Node Europ? AB",
+    "org": "559188-1130",
+    "rev": [
+     125.3,
+     242.3,
+     211.2,
+     257.9
+    ],
+    "note": "Officiell ?rsredovisning 2025: v?nde till vinst (+6,5 MSEK e. fin.poster). Inkl. h?rdvara+SaaS",
+    "emp": 42,
+    "ebitda": 13.7,
+    "ebitda_label": "EBITA",
+    "profit25": true
+   },
+   {
+    "name": "Waybler",
+    "entity": "Waybler AB",
+    "org": "559003-7452",
+    "rev": [
+     46.0,
+     60.0,
+     75.9,
+     100.2
+    ],
+    "note": "2025 ~100 MSEK (verifiera mot ?rsredovisning)",
+    "emp": 20,
+    "ebitda": 1.5,
+    "ebitda_label": "EBITDA",
+    "profit25": false
+   },
+   {
+    "name": "Voltiva",
+    "entity": "Voltiva AB",
+    "org": "559293-2882",
+    "rev": [
+     21.7,
+     24.7,
+     32.6,
+     55.6
+    ],
+    "note": "2025 +70,5%; systerbolag Mobility46 AB",
+    "emp": 14,
+    "ebitda": -8.7,
+    "ebitda_label": "EBITDA",
+    "profit25": false
+   },
+   {
+    "name": "Milepost",
+    "entity": "Milepost AB",
+    "org": "559314-0550",
+    "rev": [
+     0.3,
+     1.4,
+     3.5,
+     null
+    ],
+    "note": "2025 ej inl?mnat; ungt bolag, tog ?ver MER Sweden AC 2026",
+    "emp": 5,
+    "ebitda": -9.7,
+    "ebitda_label": "EBITDA 2024",
+    "profit25": false
+   },
+   {
+    "name": "Eways",
+    "entity": "Eways AB",
+    "org": "556167-9720",
+    "rev": [
+     250.5,
+     null,
+     null,
+     null
+    ],
+    "note": "Konkurs 2024-12; anst?llda avser 2022. Verksamheten i KG Knutsson AB",
+    "emp": 93,
+    "ebitda": null,
+    "ebitda_label": "?",
+    "profit25": null
+   }
+  ],
+  "excluded_note": "Vattenfall och E.ON ?r stora energikoncerner d?r laddning inte kan brytas ut. Monta (DK), Virta (FI) och Elaway (NO) ?r utl?ndska och finns inte p? allabolag.",
+  "source_note": "ChargeNode: officiell ?rsredovisning 2025 (org 559188-1130). ?vriga: allabolag via s?ktr?ffar per 2026-07-09; 2025 delvis ej inl?mnat ? verifiera mot ?rsredovisning f?re publicering."
+ },
+ "features": {
+  "ChargeNode": {
+   "ocpp": "Ja",
+   "payment": "App, betalkort, RFID, QR utan app",
+   "support": "Ja ? svensk telefon 24/7",
+   "roaming": "Ja (OCPI)",
+   "lb": "Ja (dynamisk)",
+   "hq": "Sverige",
+   "platform": "Egen"
+  },
+  "Vattenfall InCharge": {
+   "ocpp": "Ja",
+   "payment": "App, RFID, betalkort, QR",
+   "support": "Ja ? vardag 9?17",
+   "roaming": "Ja",
+   "lb": "Ja (dynamisk)",
+   "hq": "Sverige",
+   "platform": "Egen"
+  },
+  "Voltiva": {
+   "ocpp": "Ja",
+   "payment": "App, RFID (tillval), kort/faktura",
+   "support": "Ja ? driftcenter 24/7",
+   "roaming": "Ej bekr?ftat",
+   "lb": "Ja (dynamisk)",
+   "hq": "Sverige",
+   "platform": "Egen"
+  },
+  "Monta": {
+   "ocpp": "Ja",
+   "payment": "App, RFID, kort, kontaktl?st, QR",
+   "support": "Ej bekr?ftat (sv sajt, 09?17)",
+   "roaming": "Ja (OCPI)",
+   "lb": "Ja (dynamisk)",
+   "hq": "Danmark",
+   "platform": "Egen"
+  },
+  "Virta": {
+   "ocpp": "Ja",
+   "payment": "App, RFID, QR, kortterminal",
+   "support": "Ja ? svensk 08?19",
+   "roaming": "Ja (OCPI)",
+   "lb": "Ja (dynamisk)",
+   "hq": "Finland",
+   "platform": "Egen"
+  },
+  "E.ON": {
+   "ocpp": "Ej bekr?ftat",
+   "payment": "RFID, terminal, app, QR utan app",
+   "support": "Ja ? 24/7",
+   "roaming": "Ja",
+   "lb": "Ja (tillval)",
+   "hq": "Sverige (tysk koncern)",
+   "platform": "Tredjepart"
+  },
+  "Eways": {
+   "ocpp": "Ja",
+   "payment": "App, RFID, kort, Swish, p-appar",
+   "support": "Ja ? svensk helpdesk",
+   "roaming": "Ja (Plugsurfing)",
+   "lb": "Ja (ELLSY)",
+   "hq": "Sverige",
+   "platform": "Tredjepart (ChargePanel)"
+  },
+  "Waybler": {
+   "ocpp": "Ja",
+   "payment": "App, kort utan registrering",
+   "support": "Ja ? sv/eng 7 dgr",
+   "roaming": "Ja",
+   "lb": "Ja (patenterad)",
+   "hq": "Sverige",
+   "platform": "Egen"
+  },
+  "Milepost": {
+   "ocpp": "Ej bekr?ftat",
+   "payment": "App, QR, Swish",
+   "support": "Ja ? svensk",
+   "roaming": "Ej bekr?ftat",
+   "lb": "Ja",
+   "hq": "Sverige",
+   "platform": "Tredjepart"
+  }
+ },
+ "smart": {
+  "ChargeNode": {
+   "departure": "Ja",
+   "peak": "Ja",
+   "spot": "Ja"
+  },
+  "Vattenfall InCharge": {
+   "departure": "Ej bekr?ftat",
+   "peak": "Ja",
+   "spot": "Ej bekr?ftat"
+  },
+  "Voltiva": {
+   "departure": "Ej bekr?ftat",
+   "peak": "Ja",
+   "spot": "Ej bekr?ftat"
+  },
+  "Monta": {
+   "departure": "Ja",
+   "peak": "Ja",
+   "spot": "Ja"
+  },
+  "Virta": {
+   "departure": "Ej bekr?ftat",
+   "peak": "Ja",
+   "spot": "Ja"
+  },
+  "E.ON": {
+   "departure": "Ej bekr?ftat",
+   "peak": "Ej bekr?ftat",
+   "spot": "Ja"
+  },
+  "Eways": {
+   "departure": "Nej",
+   "peak": "Ja",
+   "spot": "Ej bekr?ftat"
+  },
+  "Waybler": {
+   "departure": "Nej",
+   "peak": "Ja",
+   "spot": "Ja"
+  },
+  "Milepost": {
+   "departure": "Nej",
+   "peak": "Nej",
+   "spot": "Nej"
+  }
+ }
+}
