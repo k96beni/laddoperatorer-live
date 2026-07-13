@@ -69,7 +69,7 @@
   "companies": [
    {
     "name": "ChargeNode",
-    "entity": "Charge Node Europ? AB",
+    "entity": "Charge Node Europé AB",
     "org": "559188-1130",
     "rev": [
      125.3,
@@ -77,7 +77,7 @@
      211.2,
      257.9
     ],
-    "note": "Officiell ?rsredovisning 2025: v?nde till vinst (+6,5 MSEK e. fin.poster). Inkl. h?rdvara+SaaS",
+    "note": "Officiell årsredovisning 2025: vände till vinst (+6,5 MSEK e. fin.poster). Inkl. hårdvara+SaaS",
     "emp": 42,
     "ebitda": 13.7,
     "ebitda_label": "EBITA",
@@ -93,7 +93,7 @@
      75.9,
      100.2
     ],
-    "note": "2025 ~100 MSEK (verifiera mot ?rsredovisning)",
+    "note": "2025 ~100 MSEK (verifiera mot årsredovisning)",
     "emp": 20,
     "ebitda": 1.5,
     "ebitda_label": "EBITDA",
@@ -125,7 +125,7 @@
      3.5,
      null
     ],
-    "note": "2025 ej inl?mnat; ungt bolag, tog ?ver MER Sweden AC 2026",
+    "note": "2025 ej inlämnat; ungt bolag, tog över MER Sweden AC 2026",
     "emp": 5,
     "ebitda": -9.7,
     "ebitda_label": "EBITDA 2024",
@@ -141,21 +141,21 @@
      null,
      null
     ],
-    "note": "Konkurs 2024-12; anst?llda avser 2022. Verksamheten i KG Knutsson AB",
+    "note": "Konkurs 2024-12; anställda avser 2022. Verksamheten i KG Knutsson AB",
     "emp": 93,
     "ebitda": null,
-    "ebitda_label": "?",
+    "ebitda_label": "–",
     "profit25": null
    }
   ],
-  "excluded_note": "Vattenfall och E.ON ?r stora energikoncerner d?r laddning inte kan brytas ut. Monta (DK), Virta (FI) och Elaway (NO) ?r utl?ndska och finns inte p? allabolag.",
-  "source_note": "ChargeNode: officiell ?rsredovisning 2025 (org 559188-1130). ?vriga: allabolag via s?ktr?ffar per 2026-07-09; 2025 delvis ej inl?mnat ? verifiera mot ?rsredovisning f?re publicering."
+  "excluded_note": "Vattenfall och E.ON är stora energikoncerner där laddning inte kan brytas ut. Monta (DK), Virta (FI) och Elaway (NO) är utländska och finns inte på allabolag.",
+  "source_note": "ChargeNode: officiell årsredovisning 2025 (org 559188-1130). Övriga: allabolag via sökträffar per 2026-07-09; 2025 delvis ej inlämnat – verifiera mot årsredovisning före publicering."
  },
  "features": {
   "ChargeNode": {
    "ocpp": "Ja",
    "payment": "App, betalkort, RFID, QR utan app",
-   "support": "Ja ? svensk telefon 24/7",
+   "support": "Ja – svensk telefon 24/7",
    "roaming": "Ja (OCPI)",
    "lb": "Ja (dynamisk)",
    "hq": "Sverige",
@@ -164,7 +164,7 @@
   "Vattenfall InCharge": {
    "ocpp": "Ja",
    "payment": "App, RFID, betalkort, QR",
-   "support": "Ja ? vardag 9?17",
+   "support": "Ja – vardag 9–17",
    "roaming": "Ja",
    "lb": "Ja (dynamisk)",
    "hq": "Sverige",
@@ -173,16 +173,16 @@
   "Voltiva": {
    "ocpp": "Ja",
    "payment": "App, RFID (tillval), kort/faktura",
-   "support": "Ja ? driftcenter 24/7",
-   "roaming": "Ej bekr?ftat",
+   "support": "Ja – driftcenter 24/7",
+   "roaming": "Ej bekräftat",
    "lb": "Ja (dynamisk)",
    "hq": "Sverige",
    "platform": "Egen"
   },
   "Monta": {
    "ocpp": "Ja",
-   "payment": "App, RFID, kort, kontaktl?st, QR",
-   "support": "Ej bekr?ftat (sv sajt, 09?17)",
+   "payment": "App, RFID, kort, kontaktlöst, QR",
+   "support": "Ej bekräftat (sv sajt, 09–17)",
    "roaming": "Ja (OCPI)",
    "lb": "Ja (dynamisk)",
    "hq": "Danmark",
@@ -191,16 +191,16 @@
   "Virta": {
    "ocpp": "Ja",
    "payment": "App, RFID, QR, kortterminal",
-   "support": "Ja ? svensk 08?19",
+   "support": "Ja – svensk 08–19",
    "roaming": "Ja (OCPI)",
    "lb": "Ja (dynamisk)",
    "hq": "Finland",
    "platform": "Egen"
   },
   "E.ON": {
-   "ocpp": "Ej bekr?ftat",
+   "ocpp": "Ej bekräftat",
    "payment": "RFID, terminal, app, QR utan app",
-   "support": "Ja ? 24/7",
+   "support": "Ja – 24/7",
    "roaming": "Ja",
    "lb": "Ja (tillval)",
    "hq": "Sverige (tysk koncern)",
@@ -209,7 +209,7 @@
   "Eways": {
    "ocpp": "Ja",
    "payment": "App, RFID, kort, Swish, p-appar",
-   "support": "Ja ? svensk helpdesk",
+   "support": "Ja – svensk helpdesk",
    "roaming": "Ja (Plugsurfing)",
    "lb": "Ja (ELLSY)",
    "hq": "Sverige",
@@ -218,17 +218,17 @@
   "Waybler": {
    "ocpp": "Ja",
    "payment": "App, kort utan registrering",
-   "support": "Ja ? sv/eng 7 dgr",
+   "support": "Ja – sv/eng 7 dgr",
    "roaming": "Ja",
    "lb": "Ja (patenterad)",
    "hq": "Sverige",
    "platform": "Egen"
   },
   "Milepost": {
-   "ocpp": "Ej bekr?ftat",
+   "ocpp": "Ej bekräftat",
    "payment": "App, QR, Swish",
-   "support": "Ja ? svensk",
-   "roaming": "Ej bekr?ftat",
+   "support": "Ja – svensk",
+   "roaming": "Ej bekräftat",
    "lb": "Ja",
    "hq": "Sverige",
    "platform": "Tredjepart"
@@ -241,14 +241,14 @@
    "spot": "Ja"
   },
   "Vattenfall InCharge": {
-   "departure": "Ej bekr?ftat",
+   "departure": "Ej bekräftat",
    "peak": "Ja",
-   "spot": "Ej bekr?ftat"
+   "spot": "Ej bekräftat"
   },
   "Voltiva": {
-   "departure": "Ej bekr?ftat",
+   "departure": "Ej bekräftat",
    "peak": "Ja",
-   "spot": "Ej bekr?ftat"
+   "spot": "Ej bekräftat"
   },
   "Monta": {
    "departure": "Ja",
@@ -256,19 +256,19 @@
    "spot": "Ja"
   },
   "Virta": {
-   "departure": "Ej bekr?ftat",
+   "departure": "Ej bekräftat",
    "peak": "Ja",
    "spot": "Ja"
   },
   "E.ON": {
-   "departure": "Ej bekr?ftat",
-   "peak": "Ej bekr?ftat",
+   "departure": "Ej bekräftat",
+   "peak": "Ej bekräftat",
    "spot": "Ja"
   },
   "Eways": {
    "departure": "Nej",
    "peak": "Ja",
-   "spot": "Ej bekr?ftat"
+   "spot": "Ej bekräftat"
   },
   "Waybler": {
    "departure": "Nej",
