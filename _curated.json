@@ -77,11 +77,10 @@
      211.2,
      257.9
     ],
-    "note": "Officiell årsredovisning 2025: vände till vinst (+6,5 MSEK e. fin.poster). Inkl. hårdvara+SaaS",
+    "note": "Officiell årsredovisning 2025 (org 559188-1130). Inkl. hårdvara + mjukvara (SaaS).",
     "emp": 42,
-    "ebitda": 13.7,
-    "ebitda_label": "EBITA",
-    "profit25": true
+    "ebitda": 14.1,
+    "ebitda_label": "EBITDA"
    },
    {
     "name": "Waybler",
@@ -190,7 +189,7 @@
    "lb": "Ja (dynamisk)",
    "hq": "Danmark",
    "platform": "Egen",
-   "service": "Mjukvaruplattform; service via installatörsnätverk"
+   "service": "Mjukvaruplattform – service oftast via återförsäljare/installatör"
   },
   "Virta": {
    "ocpp": "Ja",
@@ -200,7 +199,7 @@
    "lb": "Ja (dynamisk)",
    "hq": "Finland",
    "platform": "Egen",
-   "service": "Mjukvaruplattform; service via installatörspartners"
+   "service": "Mjukvaruplattform – service via installatörspartners"
   },
   "E.ON": {
    "ocpp": "Ej bekräftat",
@@ -230,7 +229,7 @@
    "lb": "Ja (patenterad)",
    "hq": "Sverige",
    "platform": "Egen",
-   "service": "Egen drift/support 24/7; installation via partner"
+   "service": "Plattform + hårdvara – säljs/servas ofta via partner (t.ex. Ladda Tillsammans, Vålt)"
   },
   "Milepost": {
    "ocpp": "Ej bekräftat",
