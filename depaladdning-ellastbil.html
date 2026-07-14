@@ -81,7 +81,8 @@
  {"@type":"Question","name":"Hur fungerar betalning för egen flotta jämfört med externa gäster?","acceptedAnswer":{"@type":"Answer","text":"Den egna flottan laddar via Fleet-konto eller RFID med samlad faktura och kostnad per fordon för intern uppföljning. Externa gäster kan ladda och betala via app, betalkort eller QR. Allt hanteras i samma plattform med separata betalflöden."}},
  {"@type":"Question","name":"Vilken support och SLA ingår i depåladdning?","acceptedAnswer":{"@type":"Answer","text":"ChargeNode övervakar laddningen dygnet runt, larmar vid fel och har egna servicetekniker i hela Sverige med garanterad svarstid. För verksamhetskritisk depådrift avtalas SLA med åtgärdstid, så att fordonen är laddade i tid."}},
  {"@type":"Question","name":"Hur skalar jag depåladdning från 10 till 100+ laddpunkter?","acceptedAnswer":{"@type":"Answer","text":"Med dynamisk lastbalansering kan fler laddpunkter läggas till utan att elservisen uppgraderas i onödan. ChargeNodes plattform är byggd för att växa från några laddpunkter till hundratals utan att byta system, så investeringen kan tas stegvis."}},
- {"@type":"Question","name":"Hur hjälper depåladdning med hållbarhetsrapportering (CSRD/GRI/ETS2)?","acceptedAnswer":{"@type":"Answer","text":"ChargeNode ger spårbara data per fordon och laddpunkt – energi, sessioner och CO2 – som underlag för GRI- och CSRD-rapportering och för att hantera kostnadseffekter av ETS2. Rapporterna kan exporteras ur plattformen."}}
+ {"@type":"Question","name":"Hur hjälper depåladdning med hållbarhetsrapportering (CSRD/GRI/ETS2)?","acceptedAnswer":{"@type":"Answer","text":"ChargeNode ger spårbara data per fordon och laddpunkt – energi, sessioner och CO2 – som underlag för GRI- och CSRD-rapportering och för att hantera kostnadseffekter av ETS2. Rapporterna kan exporteras ur plattformen."}},
+ {"@type":"Question","name":"Finns det statligt stöd för att bygga depåladdning för lastbil?","acceptedAnswer":{"@type":"Answer","text":"Ja. Regionala elektrifieringspiloten (Energimyndigheten) ger upp till 50 procent av projektkostnaden, 55 procent i EU:s stödområden, för laddinfrastruktur för tunga transporter med fokus på depå- och nattladdning. Totalt 2,5 miljarder kronor är avsatt 2024–2026."}}
 ]}
 </script>
 </head>
@@ -162,6 +163,18 @@
 </section>
 
 <section>
+  <h2>Varför elektrifiera depån nu – ekonomi och stöd</h2>
+  <p class="answer">Kalkylen har vänt. För modellår 2026 är eldrivna lastbilar i Sverige redan billigare än diesel över tid – cirka 10 % lägre totalkostnad för regionaltrafik och 11 % för långfärd (ICCT). Batteripriserna har fallit 93 % sedan 2010 till 108 USD/kWh (BloombergNEF), och staten stöttar depåladdning med upp till 50–55 % av projektkostnaden via Regionala elektrifieringspiloten. Andelen eldrivna tunga lastbilar bland nyregistreringar steg till 10–13 % under 2026.</p>
+  <ul>
+    <li><strong>Lägre TCO än diesel redan idag</strong> – regional −10 %, långfärd −11 % för modellår 2026 (ICCT), trots högre inköpspris.</li>
+    <li><strong>Fallande batterikostnad</strong> – 108 USD/kWh 2025, −93 % sedan 2010 (BloombergNEF).</li>
+    <li><strong>Statligt stöd</strong> – upp till 50 % (55 % i stödområde) via Regionala elektrifieringspiloten; 2,5 mdkr avsatt 2024–2026, fokus på depå- och nattladdning.</li>
+    <li><strong>Snabb marknadstillväxt</strong> – 10–13 % av nyregistrerade tunga lastbilar i Sverige var eldrivna 2026.</li>
+  </ul>
+  <p class="muted">Källor: ICCT (2026), BloombergNEF Battery Price Survey (2025), Energimyndigheten – Regionala elektrifieringspiloter, Mobility Sweden (2026). ChargeNode hjälper till att söka relevant stöd som del av projekteringen.</p>
+</section>
+
+<section>
   <h2>Jämförelseguide: så väljer du laddoperatör för depå</h2>
   <p class="answer">Välj laddoperatör efter sju kriterier: hårdvaru-agnostik (OCPP), effekt- och MCS-beredskap, effekt- och spotprisstyrning, drift och SLA, betallösning, hållbarhetsrapportering samt skalbarhet. En operatör som äger hela kedjan inhouse ger lägst driftrisk för verksamhetskritisk trafik.</p>
   <table>
@@ -209,6 +222,8 @@
     <dd>Med dynamisk lastbalansering läggs fler laddpunkter till utan onödig uppgradering av elservisen. Plattformen är byggd för att växa från några till hundratals laddpunkter utan systembyte.</dd>
     <dt>Hur hjälper depåladdning med hållbarhetsrapportering (CSRD/GRI/ETS2)?</dt>
     <dd>ChargeNode ger spårbara data per fordon och laddpunkt – energi, sessioner och CO2 – som underlag för GRI- och CSRD-rapportering och för att hantera kostnadseffekter av ETS2. Rapporterna exporteras ur plattformen.</dd>
+    <dt>Finns det statligt stöd för att bygga depåladdning?</dt>
+    <dd>Ja. Regionala elektrifieringspiloten (Energimyndigheten) ger upp till 50 % av projektkostnaden – 55 % i EU:s stödområden – för laddinfrastruktur för tunga transporter, med fokus på depå- och nattladdning. ChargeNode hjälper till att identifiera och söka stöd i projekteringen.</dd>
   </dl>
 </section>
 
