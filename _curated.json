@@ -280,5 +280,61 @@
    "peak": "Nej",
    "spot": "Nej"
   }
+ },
+ "ratings": {
+  "ChargeNode": {
+   "ios": 4.3,
+   "iosN": 753,
+   "tp": null,
+   "tpScope": "ingen aktiv profil"
+  },
+  "Vattenfall InCharge": {
+   "ios": 4.6,
+   "iosN": 4600,
+   "tp": 1.2,
+   "tpScope": "hela Vattenfall"
+  },
+  "Voltiva": {
+   "ios": 3.5,
+   "iosN": 23,
+   "tp": 2.8,
+   "tpScope": "bolaget"
+  },
+  "Monta": {
+   "ios": 4.4,
+   "iosN": 1600,
+   "tp": 2.9,
+   "tpScope": "globalt"
+  },
+  "Virta": {
+   "ios": 3.7,
+   "iosN": 15,
+   "tp": null,
+   "tpScope": "ej verifierat"
+  },
+  "E.ON": {
+   "ios": 3.6,
+   "iosN": 1100,
+   "tp": 2.3,
+   "tpScope": "hela E.ON Sverige"
+  },
+  "Eways": {
+   "ios": 2.1,
+   "iosN": 22,
+   "tp": 3.4,
+   "tpScope": "hela bolaget"
+  },
+  "Waybler": {
+   "ios": 1.8,
+   "iosN": 60,
+   "tp": 3.9,
+   "tpScope": "bolaget"
+  },
+  "Milepost": {
+   "ios": 3.4,
+   "iosN": 13,
+   "tp": null,
+   "tpScope": "ingen profil"
+  }
  }
 }
