@@ -169,6 +169,17 @@
 </section>
 
 <section>
+  <h2>Charging control decides the cost per kilometre</h2>
+  <p class="answer">At a depot, a large share of the energy cost is controllable. It is set by the spot price (hour by hour), the power charge (SEK per kW for your highest peak) and the subscribed power level. Charging all vehicles at once on arrival drives up both spot price and power peak; spreading charging into the cheap night hours and capping the peak lowers the cost – in an illustrative example around 30% lower cost per kilometre.</p>
+  <div style="overflow-x:auto"><table><thead><tr><th>Energy &amp; power cost (heavy e-truck, ≈1.2 kWh/km)</th><th>Poor control</th><th>Good control</th></tr></thead>
+    <tbody>
+      <tr><td>Cost per kWh (spot + power + grid/tax)</td><td>SEK 2.50</td><td>SEK 1.70</td></tr>
+      <tr><td><strong>Cost per 10 km</strong></td><td><strong>SEK 30.0</strong></td><td class="cn"><strong>SEK 20.4 (−32%)</strong></td></tr>
+    </tbody></table></div>
+  <p class="muted">Illustrative calculation with our own assumptions; spot price (NordPool) and power tariffs vary. ChargeNode's Fleet platform controls departure time, power (peak shaving) and spot price automatically.</p>
+</section>
+
+<section>
   <h2>Comparison guide: how to choose a charge point operator for a depot</h2>
   <p class="answer">Choose a charge point operator against seven criteria: hardware-agnosticism (OCPP), power and MCS readiness, power and spot-price control, operation and SLA, payment solution, sustainability reporting, and scalability. An operator that owns the whole chain in-house gives the lowest operational risk for business-critical traffic.</p>
   <table>

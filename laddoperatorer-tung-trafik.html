@@ -79,6 +79,7 @@
     <a href="#landskap">Publikt landskap</a>
     <a href="#depa">Kravbild depå</a>
     <a href="#smart">Smart flottstyrning</a>
+    <a href="#styrning">Elpris &amp; effekt</a>
     <a href="#fleet">Fleet-plattform</a>
     <a href="#service">Helhetsansvar</a>
     <a href="#kunder">Referenskunder</a>
@@ -179,6 +180,31 @@
     <p class="note">Sammanställt från operatörernas publika sidor (2026-07). "Ej bekräftat" = inte hittat på offentlig sida. Flera aktörer erbjuder funktionerna i personbils-/hemladdning; för depå/flotta är det ChargeNodes Fleet-plattform (nedan) som samlar alla fyra för verksamhetskritisk drift.</p>
   </section>
 
+  <section id="styrning">
+    <span class="tag"><span>Elpris &amp; effekt</span></span>
+    <h2>Elpris, effektavgifter och styrning – så påverkar det kostnaden per mil</h2>
+    <p class="answer">På en depå avgörs energikostnaden av tre saker samtidigt: <strong>spotpriset</strong> (timme för timme), <strong>effektavgiften</strong> (kr per kW för din högsta effekttopp) och den <strong>abonnerade effekten</strong>. Med okontrollerad laddning – alla fordon laddar samtidigt vid ankomst – blir både spotpris och effekttopp höga. Med styrning som sprider laddningen över nattens lågpristimmar och kapar toppen kan den energi- och effektkostnaden sänkas med i storleksordningen 30 % per mil. En stor del av driftkostnaden är alltså <em>styrbar</em>.</p>
+
+    <h3>De tre sakerna du styr på</h3>
+    <ul>
+      <li><strong>Flottans laddbehov:</strong> vilka fordon ska iväg när, och hur mycket energi behöver de? Avresetidsstyrning laddar rätt fordon i rätt ordning – ingen behöver ladda "allt, direkt".</li>
+      <li><strong>Tillgången på effekt:</strong> depåns abonnerade effekt och nätkapacitet är ett tak. Lastbalansering och peak shaving håller laddningen under taket – och gör att du ofta kan abonnera en lägre effekt och slippa en dyr nätförstärkning.</li>
+      <li><strong>Priserna:</strong> spotpriset varierar kraftigt över dygnet (NordPool) och effekttariffen sätter pris på din högsta topp. Spotprisoptimering flyttar laddning till billiga timmar; toppkapning sänker effektavgiften.</li>
+    </ul>
+
+    <h3>Räkneexempel: kostnad per mil vid bra vs dålig styrning</h3>
+    <div style="overflow-x:auto"><table><thead><tr><th>Kostnadspost (per kWh)</th><th class="num">Dålig styrning</th><th class="num">Bra styrning</th></tr></thead>
+      <tbody>
+        <tr><td>Spotpris (snitt över laddtimmarna)</td><td class="num">1,20 kr</td><td class="num">0,70 kr</td></tr>
+        <tr><td>Effektavgift (utslaget per kWh)</td><td class="num">0,50 kr</td><td class="num">0,20 kr</td></tr>
+        <tr><td>Nät (rörlig) + energiskatt</td><td class="num">0,80 kr</td><td class="num">0,80 kr</td></tr>
+        <tr><td><strong>Totalt per kWh</strong></td><td class="num"><strong>2,50 kr</strong></td><td class="num"><strong>1,70 kr</strong></td></tr>
+        <tr class="cn"><td><strong>Kostnad per mil (≈12 kWh/mil)</strong></td><td class="num"><strong>30,0 kr</strong></td><td class="num"><strong>20,4 kr</strong></td></tr>
+        <tr><td>Skillnad per mil</td><td class="num"></td><td class="num"><strong>−9,6 kr (−32 %)</strong></td></tr>
+      </tbody></table></div>
+    <p class="note"><strong>Illustrativt räkneexempel med egna antaganden</strong> (tung ellastbil ~12 kWh/mil; "dålig styrning" = laddning vid ankomst under dyra topptimmar med hög effekttopp; "bra styrning" = avresetidsstyrd, spotprisoptimerad nattladdning med kapad topp). Spotpris (NordPool) och effekttariffer (per elnätsbolag) varierar över tid och geografi – faktiskt utfall beror på elavtal, nät och flottans mönster. Exemplet visar principen: den styrbara delen (spotpris + effekt) är stor, och rätt styrning sänker kostnaden per mil påtagligt.</p>
+  </section>
+
   <section id="fleet" class="fleet">
     <span class="tag green"><span>Add-on · Fleet</span></span>
     <h2>ChargeNode Fleet – plattform för fordonsflottor och depåer</h2>
@@ -230,6 +256,8 @@
       <p>Ja, sett till totalkostnad över tid (TCO). För modellår 2026 är eldrivna lastbilar i Sverige cirka 10–11 % billigare än diesel enligt ICCT, trots högre inköpspris, tack vare lägre energi- och driftkostnad. Fallande batteripriser och statligt stöd (upp till 50–55 % via Regionala elektrifieringspiloten) förbättrar kalkylen ytterligare.</p></details>
     <details><summary>Finns det statligt stöd för att bygga depåladdning?</summary>
       <p>Ja. Regionala elektrifieringspiloten (Energimyndigheten) ger upp till 50 % av projektkostnaden – 55 % i EU:s stödområden – för laddinfrastruktur för tunga transporter, med särskilt fokus på depå- och nattladdning. 2,5 mdkr är avsatt 2024–2026. ChargeNode hjälper till att identifiera och söka stöd i projekteringen.</p></details>
+    <details><summary>Hur mycket kan smart laddstyrning sänka kostnaden per mil?</summary>
+      <p>I ett illustrativt räkneexempel sänks energi- och effektkostnaden med cirka 30 % per mil (från ~30 till ~20 kr/mil) genom att ladda på lågpristimmar och kapa effekttoppar i stället för att ladda allt samtidigt vid ankomst. Faktiskt utfall beror på elavtal, effekttariff och flottans mönster – men en stor del av kostnaden är styrbar.</p></details>
   </section>
 
   <section>
@@ -279,7 +307,8 @@ if(D.stamp){document.querySelectorAll('.upd').forEach(e=>{e.textContent=D.stamp;
  {"@type":"Question","name":"Vad är MCS och behöver en depå det?","acceptedAnswer":{"@type":"Answer","text":"MCS (Megawatt Charging System) är standarden för mycket snabb laddning av långfärds-lastbil (upp till ~1 MW+), i serieproduktion från 2026. För långfärd är MCS relevant; för de flesta return-to-base-depåer räcker CCS-DC med smart styrning eftersom fordonen står parkerade längre."}},
  {"@type":"Question","name":"Vilken laddoperatör passar för åkeri och depåladdning?","acceptedAnswer":{"@type":"Answer","text":"Välj efter smart flottstyrning (avresetidsstyrning, peak shaving, spotprisoptimering, lastbalansering), serviceorganisation med känd åtgärdstid och helhetsansvar. ChargeNode är CPO-partner för depåer med egen serviceorganisation och en Fleet-plattform för flottor."}},
  {"@type":"Question","name":"Lönar sig eldrivna lastbilar jämfört med diesel?","acceptedAnswer":{"@type":"Answer","text":"Ja, sett till totalkostnad över tid. För modellår 2026 är eldrivna lastbilar i Sverige cirka 10–11 % billigare än diesel enligt ICCT, trots högre inköpspris, tack vare lägre energi- och driftkostnad. Fallande batteripriser och statligt stöd förbättrar kalkylen ytterligare."}},
- {"@type":"Question","name":"Finns det statligt stöd för att bygga depåladdning för lastbil?","acceptedAnswer":{"@type":"Answer","text":"Ja. Regionala elektrifieringspiloten (Energimyndigheten) ger upp till 50 procent av projektkostnaden, 55 procent i EU:s stödområden, för laddinfrastruktur för tunga transporter med fokus på depå- och nattladdning. Totalt 2,5 miljarder kronor är avsatt 2024–2026."}}
+ {"@type":"Question","name":"Finns det statligt stöd för att bygga depåladdning för lastbil?","acceptedAnswer":{"@type":"Answer","text":"Ja. Regionala elektrifieringspiloten (Energimyndigheten) ger upp till 50 procent av projektkostnaden, 55 procent i EU:s stödområden, för laddinfrastruktur för tunga transporter med fokus på depå- och nattladdning. Totalt 2,5 miljarder kronor är avsatt 2024–2026."}},
+ {"@type":"Question","name":"Hur mycket kan smart laddstyrning sänka kostnaden per mil för en ellastbil?","acceptedAnswer":{"@type":"Answer","text":"I ett illustrativt räkneexempel sänks energi- och effektkostnaden med cirka 30 procent per mil (från runt 30 till runt 20 kronor per mil) genom att ladda på lågpristimmar och kapa effekttoppar i stället för att ladda allt samtidigt vid ankomst. Utfallet beror på elavtal, effekttariff och flottans laddmönster."}}
 ]}
 </script>
 <script type="application/ld+json">
