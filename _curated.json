@@ -159,7 +159,8 @@
    "roaming": "Ja (OCPI)",
    "lb": "Ja (dynamisk)",
    "hq": "Sverige",
-   "platform": "Egen"
+   "platform": "Egen",
+   "service": "Egna servicetekniker i hela Sverige (+ partners)"
   },
   "Vattenfall InCharge": {
    "ocpp": "Ja",
@@ -168,7 +169,8 @@
    "roaming": "Ja",
    "lb": "Ja (dynamisk)",
    "hq": "Sverige",
-   "platform": "Egen"
+   "platform": "Egen",
+   "service": "Support 24/7; fältservice via certifierade installatörer"
   },
   "Voltiva": {
    "ocpp": "Ja",
@@ -177,7 +179,8 @@
    "roaming": "Ej bekräftat",
    "lb": "Ja (dynamisk)",
    "hq": "Sverige",
-   "platform": "Egen"
+   "platform": "Egen",
+   "service": "Egen driftcentral 24/7; installation via partner (Mobility46)"
   },
   "Monta": {
    "ocpp": "Ja",
@@ -186,7 +189,8 @@
    "roaming": "Ja (OCPI)",
    "lb": "Ja (dynamisk)",
    "hq": "Danmark",
-   "platform": "Egen"
+   "platform": "Egen",
+   "service": "Mjukvaruplattform; service via installatörsnätverk"
   },
   "Virta": {
    "ocpp": "Ja",
@@ -195,7 +199,8 @@
    "roaming": "Ja (OCPI)",
    "lb": "Ja (dynamisk)",
    "hq": "Finland",
-   "platform": "Egen"
+   "platform": "Egen",
+   "service": "Mjukvaruplattform; service via installatörspartners"
   },
   "E.ON": {
    "ocpp": "Ej bekräftat",
@@ -204,7 +209,8 @@
    "roaming": "Ja",
    "lb": "Ja (tillval)",
    "hq": "Sverige (tysk koncern)",
-   "platform": "Tredjepart"
+   "platform": "Tredjepart",
+   "service": "Egen drift/support; installation via partner"
   },
   "Eways": {
    "ocpp": "Ja",
@@ -213,7 +219,8 @@
    "roaming": "Ja (Plugsurfing)",
    "lb": "Ja (ELLSY)",
    "hq": "Sverige",
-   "platform": "Tredjepart (ChargePanel)"
+   "platform": "Tredjepart (ChargePanel)",
+   "service": "Egna resurser + partnernätverk"
   },
   "Waybler": {
    "ocpp": "Ja",
@@ -222,7 +229,8 @@
    "roaming": "Ja",
    "lb": "Ja (patenterad)",
    "hq": "Sverige",
-   "platform": "Egen"
+   "platform": "Egen",
+   "service": "Egen drift/support 24/7; installation via partner"
   },
   "Milepost": {
    "ocpp": "Ej bekräftat",
@@ -231,7 +239,8 @@
    "roaming": "Ej bekräftat",
    "lb": "Ja",
    "hq": "Sverige",
-   "platform": "Tredjepart"
+   "platform": "Tredjepart",
+   "service": "Helhetsansvar egna platser (montering via entreprenör)"
   }
  },
  "smart": {
