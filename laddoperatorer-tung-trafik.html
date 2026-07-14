@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laddoperatörer för tung trafik i Sverige 2026 – depåladdning, DC & flottladdning</title>
+<meta name="description" content="Guide och jämförelse för laddning av tung trafik i Sverige 2026: depåladdning för åkeri, distributionscentral och lastbilscentral, DC/MCS-landskapet, smart flottstyrning (avresetid, peak shaving, spotpris, lastbalansering) och ChargeNodes Fleet-plattform. Neutral metod, data från NOBIL.">
+<meta name="robots" content="noindex,follow"><!-- staging på github.io: noindex tills publicerad på chargenode.eu -->
+<link rel="canonical" href="https://chargenode.eu/laddoperatorer-tung-trafik">
+<style>
+  :root{--ink:#111111;--muted:#555555;--line:#E4E4E4;--cn:#1EBE69;--cn-dark:#0E7A42;--yellow:#FFDE13;--bg:#FBFBFB;--card:#FFFFFF;--gray:#F7F7F7;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.6 "Circular XX","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:980px;margin:0 auto;padding:24px;}
+  header.hero{background:linear-gradient(135deg,#111111,#1F1F1F);color:#fff;padding:52px 0;}
+  h1{font-size:2.1rem;line-height:1.08;letter-spacing:-.02em;margin:0 0 10px;font-weight:500}
+  .lead{font-size:1.1rem;color:#AAAAAA;max-width:70ch}
+  .updated{font-size:.85rem;color:#AAAAAA;margin-top:14px}
+  h2{font-size:1.5rem;margin:46px 0 8px;font-weight:500;letter-spacing:-.01em}
+  h2::before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--cn);margin-right:10px;vertical-align:middle}
+  h3{font-size:1.12rem;margin:22px 0 6px;font-weight:500}
+  .muted{color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0;box-shadow:0 4px 24px rgba(0,0,0,.06)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .kpi .n{font-size:1.7rem;font-weight:500;color:var(--ink)}
+  .kpi .l{font-size:.83rem;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:.92rem;margin:8px 0}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:700;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr.cn td{background:rgba(30,190,105,.10);font-weight:600}
+  .note{font-size:.84rem;color:var(--muted);border-left:3px solid var(--cn);padding:6px 12px;margin:10px 0}
+  .yes{color:var(--cn-dark);font-weight:600}.no{color:#B23B3B}.maybe{color:#9a7d16}
+  details{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--card)}
+  summary{font-weight:600;cursor:pointer}
+  .cta{background:#111111;color:#fff;border-radius:16px;padding:28px;margin:26px 0;text-align:center}
+  .cta a{display:inline-block;margin-top:12px;background:var(--cn);color:#111;padding:12px 24px;border-radius:4px;text-decoration:none;font-weight:700}
+  a{color:#111;text-decoration:underline;text-decoration-color:var(--cn);text-underline-offset:2px}
+  a:hover{color:var(--cn-dark)}
+  .tag{display:inline-block;background:#111;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:8px 20px 8px 26px;transform:skewX(-14deg);line-height:1;margin:0 0 4px}
+  .tag>span{display:inline-block;transform:skewX(14deg)}
+  .tag.green{background:var(--cn);color:#111}
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}
+  .quotes blockquote{margin:0;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--cn);border-radius:12px;padding:18px 20px;font-size:.98rem;line-height:1.55}
+  .quotes cite{display:block;margin-top:12px;font-style:normal;font-weight:600;font-size:.85rem;color:var(--muted)}
+  .brandmark{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:1rem;margin-bottom:14px;color:#fff}
+  .brandmark .bdot{width:11px;height:11px;border-radius:50%;background:var(--cn);display:inline-block}
+  .nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:11px 0;margin:0 0 4px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.85rem}
+  .nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
+  .nav a:hover{color:var(--cn-dark)}
+  .tldr{background:#111;color:#fff;border-radius:16px;padding:22px 26px;margin:20px 0}
+  .tldr h2{margin:0 0 12px;color:#fff;font-size:1.15rem}
+  .tldr h2::before{display:none}
+  .tldr ul{margin:0;padding-left:18px}
+  .tldr li{margin:7px 0;line-height:1.5;color:#eee}
+  .tldr b{color:var(--cn)}
+  .fleet{background:linear-gradient(135deg,#0E7A42,#1EBE69);color:#fff;border-radius:16px;padding:26px;margin:20px 0}
+  .fleet h2{color:#fff;margin-top:0}.fleet h2::before{display:none}
+  .fleet table{color:#fff}.fleet th,.fleet td{border-bottom:1px solid rgba(255,255,255,.25)}
+  .fleet th{color:rgba(255,255,255,.85)}
+  footer{color:var(--muted);font-size:.85rem;padding:30px 0}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <div class="brandmark"><span class="bdot"></span>ChargeNode</div>
+  <h1>Laddoperatörer för tung trafik i Sverige 2026</h1>
+  <p class="lead">Depåladdning för <strong>åkeri, distributionscentral och lastbilscentral</strong> – DC- och MCS-landskapet, smart flottstyrning och vad som skiljer operatörerna åt. Samma neutrala metod som vår <a style="color:#fff" href="laddoperatorer-jamforelse.html">jämförelse av publik laddning</a>. Data från NOBIL.</p>
+  <p class="updated">Senast uppdaterad <span class="upd">2026-07-14</span> · Sammanställt av ChargeNode · <a style="color:#fff" href="#metod">Metod &amp; källor</a></p>
+</div></header>
+
+<main class="wrap">
+
+  <nav class="nav" aria-label="Innehåll på sidan">
+    <a href="#marknad">Marknadsläget</a>
+    <a href="#landskap">Publikt landskap</a>
+    <a href="#depa">Kravbild depå</a>
+    <a href="#smart">Smart flottstyrning</a>
+    <a href="#fleet">Fleet-plattform</a>
+    <a href="#service">Helhetsansvar</a>
+    <a href="#kunder">Referenskunder</a>
+    <a href="#guide">Köpguide</a>
+  </nav>
+
+  <div class="kpis">
+    <div class="kpi"><div class="n" id="kpiHd">107</div><div class="l">publika DC-punkter i tung-trafik-kontext (NOBIL)</div></div>
+    <div class="kpi"><div class="n" id="kpiMcs">3</div><div class="l">MCS-uttag (megawattladdning) publikt idag</div></div>
+    <div class="kpi"><div class="n">1 000+</div><div class="l">ellastbilar för långfärd i Sverige – EU-ledande</div></div>
+    <div class="kpi"><div class="n">Depå</div><div class="l">ChargeNodes fokus (return-to-base) – inte korridor/hårdvara</div></div>
+  </div>
+
+  <div class="tldr">
+    <h2>Snabbsvar</h2>
+    <ul>
+      <li><b>Publik lastbilsladdning är ännu liten och emergent</b> i Sverige – och domineras av dedikerade aktörer (Einride, Milence). <b>Depåladdning är privat</b> och syns inte i publik data.</li>
+      <li><b>ChargeNode är CPO-partner för depåer</b> (return-to-base) – inte hårdvarutillverkare och inte korridorladdning.</li>
+      <li><b>Fleet-plattformen</b> ger avresetidsstyrning, peak shaving, spotprisoptimering och lastbalansering – byggt för verksamhetskritisk drift.</li>
+      <li><b>ChargeNode tar helhetsansvaret inhouse</b> – en part för hela depåns laddning, från projektering till drift och support.</li>
+    </ul>
+  </div>
+
+  <section id="marknad">
+    <span class="tag"><span>Marknadsläget</span></span>
+    <h2>Var står tung-trafik-laddningen i Sverige?</h2>
+    <p>Sverige är ett av Europas ledande länder för eldriven tung trafik, med <strong>1 000+ ellastbilar</strong> för långfärd och en snabbt växande andel el bland nya kommersiella registreringar. <strong>MCS (Megawatt Charging System)</strong> – standarden för långfärds-lastbil – går i serieproduktion från 2026 (bl.a. Volvo FH Aero Electric, Scania och Daimler eActros 600). Marknaden delas i två delar: <strong>korridorladdning</strong> längs väg (publika MCS-hubbar, t.ex. Milence) och <strong>depåladdning</strong> vid åkeriets egen anläggning (return-to-base). ChargeNode spelar depå.</p>
+    <p class="note">Marknadskontext per 2026. MCS-korridorer och ren hårdvara är utanför ChargeNodes fokus. Källor: branschdata (Mobility Sweden m.fl.), fordonstillverkarnas lanseringsplaner.</p>
+  </section>
+
+  <section id="landskap">
+    <span class="tag"><span>Publikt landskap</span></span>
+    <h2>Hur ser den publika DC-laddningen för tung trafik ut?</h2>
+    <p>Den publika lastbilsladdningen i Sverige är fortfarande liten. I NOBIL finns idag <strong><span id="txtHd">107</span> publika DC-punkter</strong> i tung-trafik-kontext (MCS-uttag eller hög-effekts-DC hos logistik-/transportägare), varav bara <strong><span id="txtMcs">3</span> MCS-uttag</strong>. Landskapet domineras av dedikerade aktörer som Einride (egna flottstationer) och Milence (korridor-JV).</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Operatör (publik tung-trafik-kontext)</th><th class="num">DC-punkter</th></tr></thead><tbody id="tblLandscape"><tr class=""><td>Einride</td><td class="num">52</td></tr><tr class=""><td>Milence</td><td class="num">20</td></tr><tr class=""><td>OKQ8</td><td class="num">8</td></tr><tr class=""><td>Ragn-Sells</td><td class="num">8</td></tr><tr class=""><td>GITO</td><td class="num">6</td></tr><tr class=""><td>E.ON</td><td class="num">4</td></tr><tr class=""><td>Circle K</td><td class="num">3</td></tr><tr class=""><td>Eways</td><td class="num">2</td></tr><tr class=""><td>BEV_R CHARGE</td><td class="num">2</td></tr><tr class=""><td>Jula Logistics</td><td class="num">2</td></tr></tbody></table></div>
+    <p class="note"><strong>Viktig brasklapp:</strong> detta speglar bara <strong>publik</strong> laddning. <strong>Depåladdning – som är den stora tung-trafik-marknaden och ChargeNodes fokus – är i regel privat och finns inte i NOBIL.</strong> ChargeNode syns därför nära noll i publik data trots en aktiv depåverksamhet. Därför jämför vi nedan främst <strong>kapabilitet och erbjudande</strong>, inte publik marknadsandel. Metod: se längst ner.</p>
+  </section>
+
+  <section id="depa">
+    <span class="tag"><span>Kravbild depå</span></span>
+    <h2>Vad krävs för att elektrifiera en lastbilsdepå?</h2>
+    <p>Depåladdning skiljer sig fundamentalt från personbilsladdning: många fordon, korta laddfönster nattetid, höga effekter och <strong>verksamhetskritisk drift</strong> – en lastbil som inte är laddad på morgonen är ett stopp i produktionen. De avgörande faktorerna:</p>
+    <ul>
+      <li><strong>Effekt & nätanslutning</strong> – depåer drar mycket effekt; nätkapacitet och abonnemang blir ofta flaskhalsen. Lastbalansering och peak shaving avgör om det går att undvika en dyr nätförstärkning.</li>
+      <li><strong>Avresetidsstyrning</strong> – rätt fordon fulladdat vid rätt tid, i stället för att allt laddar samtidigt.</li>
+      <li><strong>Driftsäkerhet & service</strong> – vem rycker ut, hur snabbt, och med vilken SLA? (se <a href="#service">Helhetsansvar</a>).</li>
+      <li><strong>Skalbarhet</strong> – börja med en del av flottan och skala utan att byta plattform.</li>
+    </ul>
+  </section>
+
+  <section id="smart">
+    <span class="tag"><span>Smart flottstyrning</span></span>
+    <h2>Smart laddning för flottor – vilka funktioner finns?</h2>
+    <p>För en depå är energioptimering det som avgör lönsamheten. Fyra funktioner är centrala: <strong>avresetidsstyrning</strong>, <strong>peak shaving</strong> (kapa effekttoppar mot abonnemanget), <strong>spotprisoptimering</strong> (ladda när elen är billigast) och <strong>lastbalansering</strong>. Tabellen visar vilka operatörer som erbjuder dem (samma sammanställning som i publik-jämförelsen).</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Operatör</th><th>Avresetidsstyrning</th><th>Peak shaving</th><th>Spotprisoptimering</th></tr></thead>
+      <tbody>
+        <tr class="cn"><td>ChargeNode</td><td class="yes">Ja</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+        <tr><td>Monta</td><td class="yes">Ja</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+        <tr><td>Vattenfall InCharge</td><td class="maybe">Ej bekräftat</td><td class="yes">Ja</td><td class="maybe">Ej bekräftat</td></tr>
+        <tr><td>Voltiva</td><td class="maybe">Ej bekräftat</td><td class="yes">Ja</td><td class="maybe">Ej bekräftat</td></tr>
+        <tr><td>Virta</td><td class="maybe">Ej bekräftat</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+        <tr><td>E.ON</td><td class="maybe">Ej bekräftat</td><td class="maybe">Ej bekräftat</td><td class="yes">Ja</td></tr>
+        <tr><td>Eways</td><td class="no">Nej</td><td class="yes">Ja</td><td class="maybe">Ej bekräftat</td></tr>
+      </tbody></table></div>
+    <p class="note">Sammanställt från operatörernas publika sidor (2026-07). "Ej bekräftat" = inte hittat på offentlig sida. Flera aktörer erbjuder funktionerna i personbils-/hemladdning; för depå/flotta är det ChargeNodes Fleet-plattform (nedan) som samlar alla fyra för verksamhetskritisk drift.</p>
+  </section>
+
+  <section id="fleet" class="fleet">
+    <span class="tag green"><span>Add-on · Fleet</span></span>
+    <h2>ChargeNode Fleet – plattform för fordonsflottor och depåer</h2>
+    <p>Utöver laddoperatörsrollen erbjuder ChargeNode en <strong>Fleet-plattform</strong> (nästa generation, FM 2.0, lanseras 1 september 2026) byggd specifikt för fordonsflottor och return-to-base-depåer. ChargeNode är här <strong>CPO-partner för åkerier och distributionscentraler</strong> – inte hårdvarutillverkare.</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Funktion</th><th>Vad den gör</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Avresetidsstyrd laddning</strong></td><td>Prioriterar de fordon som ska iväg först – rätt fordon fulladdat vid rätt tid.</td></tr>
+        <tr><td><strong>Peak shaving</strong></td><td>Kapar effekttoppar och sänker effektkostnaden – ofta den avgörande lönsamhetsfaktorn för en depå.</td></tr>
+        <tr><td><strong>Spotprisoptimering</strong></td><td>Laddar när elen är billigast, via NordPool-integration.</td></tr>
+        <tr><td><strong>Lastbalansering</strong></td><td>Optimal effektfördelning mellan laddpunkter vid många fordon och korta laddfönster.</td></tr>
+      </tbody></table></div>
+    <p style="font-size:.9rem;opacity:.95;margin-top:12px">Designat för verksamhetskritisk drift som inte tolererar driftstopp, komplexa effektbehov och return-to-base-flottor.</p>
+  </section>
+
+  <section id="service">
+    <span class="tag"><span>Helhetsansvar</span></span>
+    <h2>Vem ansvarar när en depåladdare krånglar?</h2>
+    <p>För en depå med verksamhetskritisk drift är serviceorganisationen ofta viktigare än något annat mått. En laddlösning består av flera lager – <strong>plattform, kundrelation, entreprenad, service &amp; felavhjälpning, kundtjänst, betallösning och styrning</strong>. Hos rena mjukvaruplattformar (t.ex. Monta, Virta) ligger flera lager hos en återförsäljare eller installationspartner; ansvaret delas mellan flera parter.</p>
+    <p><strong>ChargeNode tar helhetsansvaret inhouse</strong> – egna servicetekniker i hela Sverige, egen plattform, entreprenad, kundtjänst, betallösning och styrning. För ett åkeri betyder det <strong>en part att ringa</strong> när ett fordon inte får laddning, i stället för att reda ut vem som ansvarar för vad.</p>
+    <p class="note">Se den fullständiga serviceorganisations-jämförelsen i <a href="laddoperatorer-jamforelse.html#funktioner">publik-jämförelsen</a>.</p>
+  </section>
+
+  <section id="kunder">
+    <span class="tag green"><span>Referenskunder</span></span>
+    <h2>Åkerier och flottor som laddar med ChargeNode</h2>
+    <p>ChargeNode arbetar med flera av Sveriges större transport- och industriaktörer, bl.a. <strong>Jula, Volvo, Holmen, Bring och Scania</strong>.</p>
+    <div class="quotes">
+      <blockquote>”Med ChargeNode som CPO-partner har vi fått en plattform som erbjuder skalbarhet och enkelhet, och inte minst ett värdefullt bollplank när vi fortsatt utvecklar vår elektrifiering.”<cite>Lennart Karlsson · VD, Jula Logistics</cite></blockquote>
+    </div>
+    <p class="note">Referenskunder och citat publicerade med kundens medgivande.</p>
+  </section>
+
+  <section id="guide">
+    <span class="tag"><span>Köpguide</span></span>
+    <h2>Frågor och svar för åkeri, depå och lastbilscentral</h2>
+    <details open><summary>Depåladdning eller publik korridorladdning – vad passar oss?</summary>
+      <p>Return-to-base-flottor (fordon som återvänder till samma depå) laddar mest kostnadseffektivt på den egna depån nattetid, med styrning som kapar effekttoppar. Publik korridorladdning (MCS längs väg) behövs för långfärd men är dyrare per kWh. De flesta åkerier börjar med depå och kompletterar med publik laddning för långa rutter.</p></details>
+    <details><summary>Hur undviker vi dyra effekttoppar när många lastbilar laddar samtidigt?</summary>
+      <p>Genom peak shaving och dynamisk lastbalansering fördelas tillgänglig effekt mellan fordonen så att abonnemangets effekttak inte överskrids – ofta går det att undvika eller skjuta upp en kostsam nätförstärkning. Avresetidsstyrning ser samtidigt till att rätt fordon är klart i tid.</p></details>
+    <details><summary>Hur mycket effekt och nätanslutning behöver en depå?</summary>
+      <p>Det beror på antal fordon, batteristorlek och laddfönster. Med smart styrning kan behovet av abonnerad effekt hållas nere jämfört med att ladda allt samtidigt. En laddpartner bör göra en effekt- och nätanalys som del av projekteringen – räkna på total kostnad över tid, inte bara på hårdvara.</p></details>
+    <details><summary>Vad är MCS och behöver vi det på depån?</summary>
+      <p>MCS (Megawatt Charging System) är standarden för mycket snabb laddning av långfärds-lastbil (upp till ~1 MW+), i serieproduktion från 2026. För långfärd längs väg är MCS relevant; för de flesta return-to-base-depåer räcker CCS-DC med smart styrning, eftersom fordonen står parkerade längre.</p></details>
+    <details><summary>Vem ansvarar för service och drift – och hur snabbt vid fel?</summary>
+      <p>Fråga alltid: har operatören egna servicetekniker eller anlitas partners, och vilken åtgärdstid/SLA gäller? För verksamhetskritisk depådrift är detta avgörande. ChargeNode uppger egna servicetekniker i hela Sverige och helhetsansvar inhouse.</p></details>
+    <details><summary>Hur skalar vi laddningen när flottan växer?</summary>
+      <p>Välj en operatör och plattform som stödjer dynamisk lastbalansering och stegvis utbyggnad, så att fler laddpunkter kan läggas till utan att uppgradera elservisen i onödan eller byta system.</p></details>
+  </section>
+
+  <section>
+    <span class="tag"><span>Ordlista</span></span>
+    <h2>Ordlista – tung trafik och depåladdning</h2>
+    <details><summary>Depåladdning (return-to-base)</summary><p>Laddning vid åkeriets egen anläggning där fordonen återvänder mellan pass – oftast nattetid med lägre effekt per fordon men många fordon samtidigt.</p></details>
+    <details><summary>MCS (Megawatt Charging System)</summary><p>Standard för mycket snabb laddning av tunga fordon, upp till ~1 MW och mer. Främst för långfärds-lastbil längs väg. I serieproduktion från 2026.</p></details>
+    <details><summary>CCS-DC</summary><p>Combined Charging System, likströmsladdning (ofta 50–400 kW). Vanligast för depå och för dagens ellastbilar.</p></details>
+    <details><summary>Peak shaving</summary><p>Att kapa effekttoppar genom att styra laddningen, så att fastighetens/depåns abonnerade effekt inte överskrids – sänker effektkostnaden.</p></details>
+    <details><summary>Lastbalansering</summary><p>Fördelning av tillgänglig eleffekt mellan laddpunkter (och övrig förbrukning) så att fler fordon kan ladda utan att säkringen löser ut. Dynamisk lastbalansering anpassar i realtid.</p></details>
+    <details><summary>Avresetidsstyrning</summary><p>Att styra laddningen efter när varje fordon ska iväg, så rätt fordon är fulladdat vid rätt tid.</p></details>
+  </section>
+
+  <div class="cta">
+    <div style="font-size:1.2rem;font-weight:700">Ska ni elektrifiera en depå eller fordonsflotta?</div>
+    <div class="muted" style="color:#eafaf3">ChargeNode är CPO-partner för åkerier och distributionscentraler – smart flottstyrning, egen serviceorganisation och helhetsansvar från projektering till drift.</div>
+    <a href="https://chargenode.eu/kontakt">Kontakta oss</a>
+  </div>
+
+  <section id="metod">
+    <span class="tag"><span>Metod</span></span>
+    <h2>Metod och källor</h2>
+    <p><strong>Så definierar vi "tung-trafik-kontext" i publik NOBIL-data.</strong> Eftersom hög effekt inte i sig betyder lastbil (mycket hög-effekts-DC är personbils-snabbladdning vid drivmedelsstationer) använder vi en flerlagers-klassning:</p>
+    <ul>
+      <li><strong>Nivå 1 – MCS-kontakt:</strong> entydigt tung trafik (megawattladdning).</li>
+      <li><strong>Nivå 2 – depåkontext:</strong> DC ≥150 kW där ägare/operatör är i logistik-/transport-/depåkontext eller ett känt lastbilsnät (t.ex. Einride, Milence).</li>
+      <li><strong>Exkluderas:</strong> hög-effekts-DC hos rena bil-/drivmedelsnät (Tesla, Circle K, OKQ8 …) utan lastbilskontext.</li>
+    </ul>
+    <p><strong>Central begränsning:</strong> depåladdning är till största delen <strong>privat</strong> och finns inte i publik NOBIL-data. Det publika landskapet speglar därför en liten, framväxande del av marknaden – inte hela depåmarknaden. Marknadsandel är därför inte ett rättvisande mått i detta segment; vi fokuserar på erbjudande och kapabilitet. Funktions- och serviceuppgifter kommer från operatörernas publika sidor (2026-07); "Ej bekräftat" där uppgift saknas.</p>
+    <p class="muted">Sammanställt av ChargeNode. Data per <span class="upd">2026-07-14</span>. Uppgifter om andra bolag bygger på öppna källor och kan innehålla fel – hör av dig för korrigering.</p>
+  </section>
+
+</main>
+
+<footer><div class="wrap">Guide för laddning av tung trafik, sammanställd av ChargeNode. Källor: NOBIL (CC BY 4.0), operatörernas publika sidor, branschdata. Senast uppdaterad <span class="upd">2026-07-14</span>.</div></footer>
+
+<script id="data" type="application/json">{"stamp": "2026-07-14"}</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+if(D.stamp){document.querySelectorAll('.upd').forEach(e=>{e.textContent=D.stamp;});}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Depåladdning eller publik korridorladdning för lastbil – vad passar oss?","acceptedAnswer":{"@type":"Answer","text":"Return-to-base-flottor laddar mest kostnadseffektivt på den egna depån nattetid med smart styrning som kapar effekttoppar. Publik korridorladdning (MCS längs väg) behövs för långfärd men är dyrare per kWh. De flesta åkerier börjar med depå och kompletterar med publik laddning för långa rutter."}},
+ {"@type":"Question","name":"Hur undviker en depå dyra effekttoppar när många lastbilar laddar samtidigt?","acceptedAnswer":{"@type":"Answer","text":"Genom peak shaving och dynamisk lastbalansering fördelas effekten mellan fordonen så att abonnemangets effekttak inte överskrids, ofta så att en kostsam nätförstärkning kan undvikas. Avresetidsstyrning ser till att rätt fordon är klart i tid."}},
+ {"@type":"Question","name":"Vad är MCS och behöver en depå det?","acceptedAnswer":{"@type":"Answer","text":"MCS (Megawatt Charging System) är standarden för mycket snabb laddning av långfärds-lastbil (upp till ~1 MW+), i serieproduktion från 2026. För långfärd är MCS relevant; för de flesta return-to-base-depåer räcker CCS-DC med smart styrning eftersom fordonen står parkerade längre."}},
+ {"@type":"Question","name":"Vilken laddoperatör passar för åkeri och depåladdning?","acceptedAnswer":{"@type":"Answer","text":"Välj efter smart flottstyrning (avresetidsstyrning, peak shaving, spotprisoptimering, lastbalansering), serviceorganisation med känd åtgärdstid och helhetsansvar. ChargeNode är CPO-partner för depåer med egen serviceorganisation och en Fleet-plattform för flottor."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"ChargeNode Fleet – depå- och flottladdning","serviceType":"Depåladdning och flottladdning för tung trafik","provider":{"@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu"},"areaServed":"SE","description":"CPO-partner för åkerier och distributionscentraler: avresetidsstyrd laddning, peak shaving, spotprisoptimering och lastbalansering för return-to-base-depåer."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu","sameAs":["https://www.linkedin.com/company/chargenode"],"address":{"@type":"PostalAddress","streetAddress":"Neongatan 4B","postalCode":"431 53","addressLocality":"Mölndal","addressCountry":"SE"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Publik DC-laddning i tung-trafik-kontext, Sverige 2026","description":"Publika DC-laddpunkter i tung-trafik-kontext (MCS eller hög-effekts-DC hos logistik-/transportägare), baserat på NOBIL API v3. Depåladdning är privat och ingår ej.","creator":{"@type":"Organization","name":"ChargeNode"},"temporalCoverage":"2026-07-14","isBasedOn":"https://nobil.no","license":"https://creativecommons.org/licenses/by/4.0/","keywords":["tung trafik","depåladdning","lastbilsladdning","MCS","DC-laddning","Sverige"]}
+</script>
+</body>
+</html>
