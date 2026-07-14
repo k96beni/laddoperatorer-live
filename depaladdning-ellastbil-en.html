@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- WEBFLOW DELIVERABLE (EN) · chargenode.eu/en/charging-solutions/depot-charging-electric-trucks
+     Same verification notes as the SV page: confirm uptime figure, hardware-partner naming,
+     and replace OneMed / GreenStop E4 placeholders with approved case content. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<title>Depot charging for electric trucks – charge point operator &amp; partner | ChargeNode</title>
+<meta name="description" content="ChargeNode is the charge point operator (CPO) that takes full responsibility for depot charging of heavy electric trucks for hauliers and logistics – hardware-agnostic operation (OCPP), power management, payment flows and 24/7 support with SLA.">
+<link rel="canonical" href="https://chargenode.eu/en/charging-solutions/depot-charging-electric-trucks">
+<link rel="alternate" hreflang="sv" href="https://chargenode.eu/laddlosningar/depaladdning-ellastbil">
+<link rel="alternate" hreflang="en" href="https://chargenode.eu/en/charging-solutions/depot-charging-electric-trucks">
+<link rel="alternate" hreflang="nb" href="https://chargenode.eu/no/ladelosninger/depotlading-ellastebil">
+<link rel="alternate" hreflang="x-default" href="https://chargenode.eu/en/charging-solutions/depot-charging-electric-trucks">
+<style>
+  :root{--ink:#111111;--navy:#052436;--green:#1EBE69;--green-dark:#0E7A42;--fluor:#D6F578;--white:#FFFFFF;--line:#E4E4E4;--muted:#5b6b76;--bg:#FBFBFB;--card:#FFFFFF;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.65 "Circular XX","Circular","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:1000px;margin:0 auto;padding:24px;}
+  a{color:var(--green-dark);text-decoration:underline;text-underline-offset:2px}
+  header.hero{background:linear-gradient(150deg,#052436,#03161f);color:#fff;padding:60px 0;}
+  .brandmark{display:inline-flex;align-items:center;gap:8px;font-weight:700;margin-bottom:16px}
+  .brandmark .bdot{width:11px;height:11px;border-radius:50%;background:var(--fluor);display:inline-block}
+  .eyebrow{display:inline-block;background:var(--fluor);color:#052436;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:16px}
+  h1{font-size:2.5rem;line-height:1.05;letter-spacing:-.02em;margin:0 0 18px;font-weight:800;max-width:18ch}
+  .definition{font-size:1.2rem;line-height:1.5;color:#dfe8ec;max-width:64ch}
+  .definition b{color:var(--fluor);font-weight:700}
+  h2{font-size:1.6rem;margin:52px 0 6px;font-weight:800;letter-spacing:-.01em}
+  h2::before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--green);margin-right:10px;vertical-align:middle}
+  h3{font-size:1.1rem;margin:20px 0 4px;font-weight:700}
+  .answer{font-size:1.05rem;line-height:1.55;border-left:4px solid var(--green);background:#eefaf4;padding:14px 18px;border-radius:0 10px 10px 0;margin:8px 0 14px}
+  p{max-width:74ch}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0 0}
+  .kpi{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:16px}
+  .kpi .n{font-size:1.7rem;font-weight:800;color:var(--fluor)}
+  .kpi .l{font-size:.83rem;color:#cbd6da}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:16px 0}
+  table{width:100%;border-collapse:collapse;font-size:.95rem;margin:12px 0}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+  td.cn{background:rgba(30,190,105,.10);font-weight:600}
+  ol.helhet{columns:2;gap:26px;padding-left:20px}ol.helhet li{margin:6px 0;break-inside:avoid}
+  ul{padding-left:20px}li{margin:5px 0}
+  dl dt{font-weight:700;margin:18px 0 4px}dl dd{margin:0 0 4px;max-width:74ch}
+  .cta{background:linear-gradient(150deg,#052436,#0E7A42);color:#fff;border-radius:16px;padding:30px;margin:34px 0;text-align:center}
+  .cta a{display:inline-block;margin-top:14px;background:var(--fluor);color:#052436;padding:13px 26px;border-radius:6px;text-decoration:none;font-weight:800}
+  .muted{color:var(--muted);font-size:.86rem}
+  nav.crumbs{font-size:.82rem;color:var(--muted);padding:14px 0}
+  footer{color:var(--muted);font-size:.85rem;padding:30px 0;border-top:1px solid var(--line);margin-top:30px}
+  @media(max-width:720px){h1{font-size:1.9rem}ol.helhet{columns:1}}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu","logo":"https://chargenode.eu/logo.png","description":"Charge point operator (CPO) and partner for depot charging of heavy electric trucks, vehicle fleets and properties in the Nordics.","sameAs":["https://www.linkedin.com/company/chargenode","https://www.crunchbase.com/organization/chargenode"],"address":{"@type":"PostalAddress","streetAddress":"Neongatan 4B","postalCode":"431 53","addressLocality":"Molndal","addressCountry":"SE"},"contactPoint":{"@type":"ContactPoint","telephone":"+46-10-205-10-55","email":"hej@chargenode.eu","contactType":"sales","areaServed":["SE","NO"],"availableLanguage":["sv","en","nb"]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Depot charging for heavy electric trucks","serviceType":"Depot charging and charge point operation (CPO) for heavy electric trucks and fleets","provider":{"@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu"},"areaServed":[{"@type":"Country","name":"Sweden"},{"@type":"Country","name":"Norway"}],"audience":{"@type":"BusinessAudience","audienceType":"Hauliers, logistics, distribution centres"},"description":"Full responsibility for depot charging of heavy electric trucks: design, hardware-agnostic operation (OCPP), power and spot-price management, payment flows and 24/7 support with SLA."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+ {"@type":"ListItem","position":1,"name":"ChargeNode","item":"https://chargenode.eu/en"},
+ {"@type":"ListItem","position":2,"name":"Charging solutions","item":"https://chargenode.eu/en/charging-solutions"},
+ {"@type":"ListItem","position":3,"name":"Depot charging for electric trucks","item":"https://chargenode.eu/en/charging-solutions/depot-charging-electric-trucks"}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Which charge point operator should a haulier choose for depot charging of electric trucks?","acceptedAnswer":{"@type":"Answer","text":"Choose a CPO that takes full responsibility for the depot: hardware-agnostic operation via OCPP, power and spot-price management, payment flows for your own fleet and guests, and 24/7 support with an SLA. ChargeNode delivers the whole chain in-house."}},
+ {"@type":"Question","name":"What does depot charging cost per truck per year?","acceptedAnswer":{"@type":"Answer","text":"It depends on the number of vehicles, battery size, charging windows and electricity contract. The largest items are the power tariff and energy, both reduced by peak shaving and spot-price control. Calculate total cost of ownership, not just hardware price."}},
+ {"@type":"Question","name":"Do I need DC or MCS for depot charging?","acceptedAnswer":{"@type":"Answer","text":"Most return-to-base depots manage with CCS-DC and smart control, since vehicles are parked for long periods overnight. MCS (megawatt charging) is mainly for fast charging of long-haul trucks on the road. ChargeNode operates CCS-DC today and is MCS-ready via hardware partners."}},
+ {"@type":"Question","name":"What is the difference between a charge point operator and a hardware supplier?","acceptedAnswer":{"@type":"Answer","text":"A hardware supplier (e.g. Kempower, Siemens, Alpitronic) makes the chargers. A charge point operator (CPO) like ChargeNode runs the operation: monitoring, power management, payment, service and support. ChargeNode works hardware-agnostically on top of leading hardware and takes full responsibility."}},
+ {"@type":"Question","name":"Can ChargeNode operate hardware we already have?","acceptedAnswer":{"@type":"Answer","text":"Yes. ChargeNode is hardware-agnostic and operates chargers that follow the OCPP standard (1.6 or later). You usually do not need to replace hardware to switch to ChargeNode as operating partner, which keeps switching costs down."}},
+ {"@type":"Question","name":"How does payment work for your own fleet versus external guests?","acceptedAnswer":{"@type":"Answer","text":"Your own fleet charges via a Fleet account or RFID with a consolidated invoice and cost per vehicle. External guests pay via app, card or QR. Everything is handled in one platform with separate, traceable payment flows."}},
+ {"@type":"Question","name":"What support and SLA are included?","acceptedAnswer":{"@type":"Answer","text":"24/7 monitoring, automatic alerts and ChargeNode's own service technicians across Sweden with a guaranteed response time. Average support response time is under 90 seconds and 96% of cases are resolved at first contact."}},
+ {"@type":"Question","name":"How do I scale from 10 to 100+ charging points?","acceptedAnswer":{"@type":"Answer","text":"With dynamic load balancing, more charging points are added without unnecessary grid upgrades. ChargeNode's platform is built to grow from a few to hundreds of charging points without changing systems, so the investment can be staged."}},
+ {"@type":"Question","name":"How does depot charging help with sustainability reporting (CSRD/GRI/ETS2)?","acceptedAnswer":{"@type":"Answer","text":"ChargeNode provides traceable data per vehicle and charging point – energy, sessions and CO2 – as a basis for GRI and CSRD reporting and for managing the cost effects of ETS2. Reports are exported from the platform."}}
+]}
+</script>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <div class="brandmark"><span class="bdot"></span>ChargeNode</div>
+  <span class="eyebrow">Depot charging · heavy electric trucks</span>
+  <h1>Charge point operator for depot charging of heavy electric trucks</h1>
+  <p class="definition"><b>ChargeNode is a charge point operator (CPO) that takes full responsibility for depot charging of heavy electric trucks</b> – from design and hardware to daily operation, power management, payment flows and 24/7 support. We work hardware-agnostically on top of leading charging hardware and take responsibility for keeping the vehicles charged on time, every day.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="n">99.7%</div><div class="l">platform uptime</div></div>
+    <div class="kpi"><div class="n">&lt;90 sec</div><div class="l">average support response</div></div>
+    <div class="kpi"><div class="n">96%</div><div class="l">resolved at first contact</div></div>
+    <div class="kpi"><div class="n">60,000+</div><div class="l">charging points · 4M+ sessions</div></div>
+  </div>
+</div></header>
+
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb">ChargeNode → Charging solutions → Depot charging for electric trucks</nav>
+
+<section>
+  <h2>What is depot charging and what does it require?</h2>
+  <p class="answer">Depot charging is the charging of a vehicle fleet at the haulier's own site, where vehicles return between shifts (return-to-base) and are charged, usually overnight. It requires sufficient grid connection and power, smart control that distributes power between vehicles, and enough reliability for business-critical traffic. Most depots manage with CCS-DC and control; MCS is mainly needed for long-haul.</p>
+  <p>Unlike passenger-car charging, depot charging is about many vehicles, short charging windows and high power – where an uncharged truck in the morning means a production stop. Power management (peak shaving), departure-time control and load balancing determine both reliability and cost, since the power tariff is often the largest item.</p>
+  <h3>AC, DC and MCS – in brief</h3>
+  <ul>
+    <li><strong>AC</strong> – slow charging, rarely enough for heavy vehicles at a depot.</li>
+    <li><strong>CCS-DC</strong> – 50–400 kW, standard for today's depots with overnight charging.</li>
+    <li><strong>MCS</strong> – megawatt charging for long-haul on the road; in serial production from 2026.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>ChargeNode as operating partner – what full responsibility includes</h2>
+  <p class="answer">As a charge point operator, ChargeNode takes full responsibility for the depot's charging – not just the software. We design, select and install hardware, commission, monitor around the clock, manage power and cost, handle payment flows, service with our own technicians and deliver reporting data. The haulier gets one partner for the entire chain.</p>
+  <ol class="helhet">
+    <li>Design and needs analysis for the depot</li>
+    <li>Grid connection and power dimensioning</li>
+    <li>Hardware selection and procurement (OCPP-agnostic)</li>
+    <li>Installation and contracting via certified partners</li>
+    <li>Commissioning and integration</li>
+    <li>24/7 monitoring and daily operation</li>
+    <li>Power and load balancing plus spot-price control</li>
+    <li>Payment and invoicing flows (own fleet + guests)</li>
+    <li>Service and on-call with guaranteed response time (SLA)</li>
+    <li>Sustainability reporting and scaling over time</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Hardware we work with</h2>
+  <p class="answer">ChargeNode is hardware-agnostic and operates leading charging hardware via OCPP – you are not locked to one brand. This lets you choose the right charger for the depot, reuse existing hardware when switching, and upgrade as MCS and new models arrive.</p>
+  <p>We work with hardware from, among others, <strong>Kempower, Siemens, Alpitronic, CTEK and AmpSociety</strong>, as well as our own products. Because operation runs on top of OCPP, we can take over and operate chargers you already own, as long as they follow the standard.</p>
+  <p class="muted">Named hardware partners to be verified internally before publication.</p>
+</section>
+
+<section>
+  <h2>Payment and invoicing</h2>
+  <p class="answer">Your own fleet charges via a Fleet account or RFID with a consolidated invoice and cost per vehicle for internal follow-up. External guests charge and pay via app, card or QR without registration. Everything is handled in one platform with separate, traceable payment flows.</p>
+  <ul>
+    <li><strong>Own fleet:</strong> Fleet account, RFID, consolidated monthly invoice, cost per vehicle and driver.</li>
+    <li><strong>External guests:</strong> app, card, QR without an app – flexible pricing.</li>
+    <li><strong>Re-invoicing:</strong> energy cost can be allocated correctly between operations.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Operation, service and SLA</h2>
+  <p class="answer">ChargeNode monitors the depot's charging around the clock, alerts automatically on faults and dispatches its own service technicians across Sweden. For business-critical depot operation, an SLA with a guaranteed response time is agreed, so vehicles are charged on time. Average support response time is under 90 seconds and 96% of cases are resolved at first contact.</p>
+  <p>Unlike a pure software platform, where service often sits with a reseller or installer, ChargeNode keeps responsibility in-house – one partner to call when something goes wrong.</p>
+</section>
+
+<section>
+  <h2>TCO – what does depot charging cost per vehicle per year?</h2>
+  <p class="answer">The total cost of ownership (TCO) for depot charging is driven mainly by the power tariff, energy, hardware/installation and operation. With peak shaving and spot-price control, energy and power costs can be reduced significantly – in well-configured depots by up to around 12% lower energy cost. Calculate total cost over time, not just charger price.</p>
+  <p>A text example: a depot that moves charging to the cheap night hours and caps power peaks reduces both variable energy cost and the subscribed power ceiling – often so that a costly grid upgrade can be postponed or avoided. <a href="https://chargenode.eu/en/roi-calculator">Model your depot in the TCO calculator</a>.</p>
+</section>
+
+<section>
+  <h2>Comparison guide: how to choose a charge point operator for a depot</h2>
+  <p class="answer">Choose a charge point operator against seven criteria: hardware-agnosticism (OCPP), power and MCS readiness, power and spot-price control, operation and SLA, payment solution, sustainability reporting, and scalability. An operator that owns the whole chain in-house gives the lowest operational risk for business-critical traffic.</p>
+  <table>
+    <thead><tr><th>Criterion</th><th>ChargeNode</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td>Hardware-agnostic / OCPP</td><td class="cn">Yes – operates leading hardware via OCPP</td><td>No lock-in; reuse existing hardware.</td></tr>
+      <tr><td>Power / MCS readiness</td><td class="cn">CCS-DC in operation; MCS-ready via partners</td><td>Covers depot today and long-haul ahead.</td></tr>
+      <tr><td>Power &amp; spot-price control</td><td class="cn">Yes – peak shaving + NordPool</td><td>Reduces power and energy cost.</td></tr>
+      <tr><td>Operation &amp; SLA</td><td class="cn">24/7 monitoring, own technicians, agreed response time</td><td>Business-critical operation cannot tolerate stops.</td></tr>
+      <tr><td>Payment solution</td><td class="cn">Fleet account, RFID, app, guest charging</td><td>Own fleet + external guests in one platform.</td></tr>
+      <tr><td>Sustainability reporting</td><td class="cn">Data for GRI, CSRD, ETS2</td><td>Traceable data per vehicle and charging point.</td></tr>
+      <tr><td>Scalability</td><td class="cn">10 → 100+ charging points without platform change</td><td>The investment can be staged.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Customer cases</h2>
+  <p class="answer">ChargeNode operates depot and fleet charging for several of Sweden's larger transport and industrial players, including Jula, Volvo, Holmen, Bring and Scania.</p>
+  <div class="card">
+    <p style="font-size:1.1rem;line-height:1.5">"With ChargeNode as CPO partner we have gained a platform that offers scalability and simplicity, and not least a valuable sounding board as we continue to develop our electrification."</p>
+    <p class="muted"><strong>Lennart Karlsson</strong> · CEO, Jula Logistics</p>
+  </div>
+  <p class="muted">[Placeholder: OneMed and GreenStop E4 – insert approved quote + verified figures (number of charging points, vehicles, results) before publication. No invented data.]</p>
+</section>
+
+<section>
+  <h2>Frequently asked questions about depot charging</h2>
+  <dl>
+    <dt>Which charge point operator should a haulier choose for depot charging of electric trucks?</dt>
+    <dd>Choose a CPO that takes full responsibility: hardware-agnostic operation (OCPP), power and spot-price control, payment flows for fleet and guests, and 24/7 support with an SLA. ChargeNode delivers the whole chain in-house.</dd>
+    <dt>What does depot charging cost per truck per year?</dt>
+    <dd>It depends on the number of vehicles, battery size, charging windows and electricity contract. The largest items are power and energy – both reduced with peak shaving and spot-price control. Calculate TCO, not just hardware price.</dd>
+    <dt>Do I need DC or MCS for depot charging?</dt>
+    <dd>Most return-to-base depots manage with CCS-DC and smart control. MCS is mainly needed for fast charging of long-haul trucks. ChargeNode operates CCS-DC today and is MCS-ready via partners.</dd>
+    <dt>What is the difference between a charge point operator and a hardware supplier?</dt>
+    <dd>A hardware supplier makes the chargers; a charge point operator (CPO) handles operation, control, payment and support. ChargeNode works OCPP-agnostically on top of leading hardware and takes full responsibility.</dd>
+    <dt>Can ChargeNode operate hardware we already have?</dt>
+    <dd>Yes. ChargeNode is hardware-agnostic and operates chargers that follow OCPP (1.6 or later). You usually do not need to replace hardware to change operating partner.</dd>
+    <dt>How does payment work for your own fleet versus external guests?</dt>
+    <dd>Own fleet charges via Fleet account or RFID with a consolidated invoice and cost per vehicle. External guests pay via app, card or QR. All in one platform with separate payment flows.</dd>
+    <dt>What support and SLA are included?</dt>
+    <dd>24/7 monitoring, automatic alerts and ChargeNode's own service technicians across Sweden with a guaranteed response time. Average response under 90 seconds and 96% resolved at first contact.</dd>
+    <dt>How do I scale from 10 to 100+ charging points?</dt>
+    <dd>With dynamic load balancing, more charging points are added without unnecessary grid upgrades. The platform is built to grow from a few to hundreds of charging points without changing systems.</dd>
+    <dt>How does depot charging help with sustainability reporting (CSRD/GRI/ETS2)?</dt>
+    <dd>ChargeNode provides traceable data per vehicle and charging point – energy, sessions and CO2 – as a basis for GRI and CSRD reporting and for managing ETS2 cost effects. Reports are exported from the platform.</dd>
+  </dl>
+</section>
+
+<div class="cta">
+  <div style="font-size:1.3rem;font-weight:800">Electrifying a depot or truck fleet?</div>
+  <div style="color:#dfe8ec;margin-top:6px">ChargeNode takes full responsibility – from design and hardware to operation, payment and 24/7 support.</div>
+  <a href="https://chargenode.eu/en/contact">Book a call</a>
+</div>
+
+<footer>ChargeNode Europe AB · Neongatan 4B, 431 53 Molndal, Sweden · +46 10-205 10 55 · hej@chargenode.eu · Charge point operator (CPO) for depot charging of heavy electric trucks, vehicle fleets and properties.</footer>
+</main>
+</body>
+</html>

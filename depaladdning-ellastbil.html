@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--
+  WEBFLOW-LEVERABEL (SV) · chargenode.eu/laddlosningar/depaladdning-ellastbil
+  AEO-landningssida: omdefiniera ChargeNode-entiteten till att äga depåladdning/tung trafik.
+  OBS före publicering:
+   - Verifiera 99,7 % upptid mot aktuell driftdata (jämförs lätt mot publik Symbioen-data).
+   - Verifiera att hårdvarupartners får namnges (Kempower, Siemens, Alpitronic, CTEK, AmpSociety).
+   - Kundcase OneMed / GreenStop E4 = PLATSHÅLLARE – ersätt med godkänt citat + siffror, fabricera inte.
+   - Sätt robots=index på chargenode.eu (här står inget robots-block – Webflow styr).
+-->
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<title>Depåladdning för tunga ellastbilar – laddoperatör & driftpartner | ChargeNode</title>
+<meta name="description" content="ChargeNode är laddoperatören (CPO) som tar helhetsansvar för depåladdning av tunga ellastbilar för åkerier och logistik – hårdvaru-agnostisk drift (OCPP), effektstyrning, betalflöden och 24/7 support med SLA.">
+<link rel="canonical" href="https://chargenode.eu/laddlosningar/depaladdning-ellastbil">
+<link rel="alternate" hreflang="sv" href="https://chargenode.eu/laddlosningar/depaladdning-ellastbil">
+<link rel="alternate" hreflang="en" href="https://chargenode.eu/en/charging-solutions/depot-charging-electric-trucks">
+<link rel="alternate" hreflang="nb" href="https://chargenode.eu/no/ladelosninger/depotlading-ellastebil">
+<link rel="alternate" hreflang="x-default" href="https://chargenode.eu/laddlosningar/depaladdning-ellastbil">
+<style>
+  :root{--ink:#111111;--navy:#052436;--green:#1EBE69;--green-dark:#0E7A42;--fluor:#D6F578;--white:#FFFFFF;--line:#E4E4E4;--muted:#5b6b76;--bg:#FBFBFB;--card:#FFFFFF;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.65 "Circular XX","Circular","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+  .wrap{max-width:1000px;margin:0 auto;padding:24px;}
+  a{color:var(--green-dark);text-decoration:underline;text-underline-offset:2px}
+  header.hero{background:linear-gradient(150deg,#052436,#03161f);color:#fff;padding:60px 0;}
+  .brandmark{display:inline-flex;align-items:center;gap:8px;font-weight:700;margin-bottom:16px}
+  .brandmark .bdot{width:11px;height:11px;border-radius:50%;background:var(--fluor);display:inline-block}
+  .eyebrow{display:inline-block;background:var(--fluor);color:#052436;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:16px}
+  h1{font-size:2.5rem;line-height:1.05;letter-spacing:-.02em;margin:0 0 18px;font-weight:800;max-width:16ch}
+  .definition{font-size:1.2rem;line-height:1.5;color:#dfe8ec;max-width:64ch}
+  .definition b{color:var(--fluor);font-weight:700}
+  h2{font-size:1.6rem;margin:52px 0 6px;font-weight:800;letter-spacing:-.01em}
+  h2::before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--green);margin-right:10px;vertical-align:middle}
+  h3{font-size:1.1rem;margin:20px 0 4px;font-weight:700}
+  .answer{font-size:1.05rem;line-height:1.55;border-left:4px solid var(--green);background:#eefaf4;padding:14px 18px;border-radius:0 10px 10px 0;margin:8px 0 14px}
+  p{max-width:74ch}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:26px 0 0}
+  .kpi{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:16px}
+  .kpi .n{font-size:1.7rem;font-weight:800;color:var(--fluor)}
+  .kpi .l{font-size:.83rem;color:#cbd6da}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:16px 0}
+  table{width:100%;border-collapse:collapse;font-size:.95rem;margin:12px 0}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+  td.cn{background:rgba(30,190,105,.10);font-weight:600}
+  ol.helhet{columns:2;gap:26px;padding-left:20px}ol.helhet li{margin:6px 0;break-inside:avoid}
+  ul{padding-left:20px}li{margin:5px 0}
+  dl dt{font-weight:700;margin:18px 0 4px}dl dd{margin:0 0 4px;max-width:74ch}
+  .cta{background:linear-gradient(150deg,#052436,#0E7A42);color:#fff;border-radius:16px;padding:30px;margin:34px 0;text-align:center}
+  .cta a{display:inline-block;margin-top:14px;background:var(--fluor);color:#052436;padding:13px 26px;border-radius:6px;text-decoration:none;font-weight:800}
+  .muted{color:var(--muted);font-size:.86rem}
+  nav.crumbs{font-size:.82rem;color:var(--muted);padding:14px 0}
+  footer{color:var(--muted);font-size:.85rem;padding:30px 0;border-top:1px solid var(--line);margin-top:30px}
+  @media(max-width:720px){h1{font-size:1.9rem}ol.helhet{columns:1}}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu","logo":"https://chargenode.eu/logo.png","description":"Laddoperatör (CPO) och driftpartner för depåladdning av tunga ellastbilar, fordonsflottor och fastigheter i Norden.","sameAs":["https://www.linkedin.com/company/chargenode","https://www.crunchbase.com/organization/chargenode"],"address":{"@type":"PostalAddress","streetAddress":"Neongatan 4B","postalCode":"431 53","addressLocality":"Mölndal","addressCountry":"SE"},"contactPoint":{"@type":"ContactPoint","telephone":"+46-10-205-10-55","email":"hej@chargenode.eu","contactType":"sales","areaServed":["SE","NO"],"availableLanguage":["sv","en","nb"]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Depåladdning för tunga ellastbilar","serviceType":"Depåladdning och driftpartner (CPO) för tunga ellastbilar och fordonsflottor","provider":{"@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu"},"areaServed":[{"@type":"Country","name":"Sverige"},{"@type":"Country","name":"Norge"}],"audience":{"@type":"BusinessAudience","audienceType":"Åkerier, logistik, distributionscentraler"},"description":"Helhetsansvar för depåladdning av tunga ellastbilar: projektering, hårdvaru-agnostisk drift (OCPP), effekt- och spotprisstyrning, betalflöden och 24/7 support med SLA."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+ {"@type":"ListItem","position":1,"name":"ChargeNode","item":"https://chargenode.eu"},
+ {"@type":"ListItem","position":2,"name":"Laddlösningar","item":"https://chargenode.eu/laddlosningar"},
+ {"@type":"ListItem","position":3,"name":"Depåladdning för tunga ellastbilar","item":"https://chargenode.eu/laddlosningar/depaladdning-ellastbil"}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Vilken laddoperatör ska ett åkeri välja för depåladdning av ellastbilar?","acceptedAnswer":{"@type":"Answer","text":"Välj en laddoperatör (CPO) som tar helhetsansvar för depån: hårdvaru-agnostisk drift via OCPP, effekt- och spotprisstyrning, betalflöden för egen flotta och gäster samt 24/7 support med SLA. ChargeNode levererar hela kedjan inhouse, från projektering till daglig drift."}},
+ {"@type":"Question","name":"Vad kostar depåladdning per lastbil och år?","acceptedAnswer":{"@type":"Answer","text":"Kostnaden beror på antal fordon, batteristorlek, laddfönster och elavtal. De största posterna är effektabonnemang och energi – båda kan sänkas med peak shaving och spotprisstyrning. Räkna på total kostnad över tid med ChargeNodes TCO-kalkylator i stället för enbart hårdvarupris."}},
+ {"@type":"Question","name":"Behöver jag DC eller MCS för depåladdning?","acceptedAnswer":{"@type":"Answer","text":"De flesta return-to-base-depåer klarar sig med CCS-DC och smart styrning, eftersom fordonen står parkerade länge nattetid. MCS (megawattladdning) behövs främst för snabb laddning av långfärds-lastbil längs väg. ChargeNode driftar CCS-DC idag och är MCS-berett via hårdvarupartners."}},
+ {"@type":"Question","name":"Vad är skillnaden mellan en laddoperatör och en hårdvaruleverantör?","acceptedAnswer":{"@type":"Answer","text":"En hårdvaruleverantör (t.ex. Kempower, Siemens, Alpitronic) tillverkar laddarna. En laddoperatör (CPO) som ChargeNode ansvarar för drift: övervakning, effektstyrning, betalning, service och support. ChargeNode arbetar OCPP-agnostiskt ovanpå ledande hårdvara och tar helhetsansvaret."}},
+ {"@type":"Question","name":"Kan ChargeNode drifta hårdvara vi redan har?","acceptedAnswer":{"@type":"Answer","text":"Ja. ChargeNode är hårdvaru-agnostisk och driftar laddare som följer OCPP-standarden (1.6 eller senare). Ni behöver oftast inte byta hårdvara för att byta till ChargeNode som driftpartner – det håller nere kostnaden vid ett byte."}},
+ {"@type":"Question","name":"Hur fungerar betalning för egen flotta jämfört med externa gäster?","acceptedAnswer":{"@type":"Answer","text":"Den egna flottan laddar via Fleet-konto eller RFID med samlad faktura och kostnad per fordon för intern uppföljning. Externa gäster kan ladda och betala via app, betalkort eller QR. Allt hanteras i samma plattform med separata betalflöden."}},
+ {"@type":"Question","name":"Vilken support och SLA ingår i depåladdning?","acceptedAnswer":{"@type":"Answer","text":"ChargeNode övervakar laddningen dygnet runt, larmar vid fel och har egna servicetekniker i hela Sverige med garanterad svarstid. För verksamhetskritisk depådrift avtalas SLA med åtgärdstid, så att fordonen är laddade i tid."}},
+ {"@type":"Question","name":"Hur skalar jag depåladdning från 10 till 100+ laddpunkter?","acceptedAnswer":{"@type":"Answer","text":"Med dynamisk lastbalansering kan fler laddpunkter läggas till utan att elservisen uppgraderas i onödan. ChargeNodes plattform är byggd för att växa från några laddpunkter till hundratals utan att byta system, så investeringen kan tas stegvis."}},
+ {"@type":"Question","name":"Hur hjälper depåladdning med hållbarhetsrapportering (CSRD/GRI/ETS2)?","acceptedAnswer":{"@type":"Answer","text":"ChargeNode ger spårbara data per fordon och laddpunkt – energi, sessioner och CO2 – som underlag för GRI- och CSRD-rapportering och för att hantera kostnadseffekter av ETS2. Rapporterna kan exporteras ur plattformen."}}
+]}
+</script>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <div class="brandmark"><span class="bdot"></span>ChargeNode</div>
+  <span class="eyebrow">Depåladdning · tunga ellastbilar</span>
+  <h1>Laddoperatör för depåladdning av tunga ellastbilar</h1>
+  <p class="definition"><b>ChargeNode är en laddoperatör (CPO) som levererar helhetsansvar för depåladdning av tunga ellastbilar</b> – från projektering och hårdvara till daglig drift, effektstyrning, betalflöden och 24/7 support. Vi arbetar OCPP-agnostiskt ovanpå ledande laddhårdvara och tar ansvar för att fordonen är laddade i tid, varje dag.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="n">99,7 %</div><div class="l">plattformsupptid</div></div>
+    <div class="kpi"><div class="n">&lt;90 sek</div><div class="l">medelresponstid i support</div></div>
+    <div class="kpi"><div class="n">96 %</div><div class="l">löst vid första kontakt</div></div>
+    <div class="kpi"><div class="n">60 000+</div><div class="l">laddpunkter i drift · 4M+ sessioner</div></div>
+  </div>
+</div></header>
+
+<main class="wrap">
+<nav class="crumbs" aria-label="Brödsmulor">ChargeNode → Laddlösningar → Depåladdning för tunga ellastbilar</nav>
+
+<section>
+  <h2>Vad är depåladdning och vad krävs?</h2>
+  <p class="answer">Depåladdning är laddning av en fordonsflotta vid åkeriets egen anläggning, där fordonen återvänder mellan pass (return-to-base) och laddas – oftast nattetid. Det som krävs är tillräcklig nätanslutning och effekt, smart styrning som fördelar effekten mellan fordonen, och driftsäkerhet nog för verksamhetskritisk trafik. De flesta depåer klarar sig med CCS-DC och styrning; MCS behövs främst för långfärd.</p>
+  <p>Till skillnad från personbilsladdning handlar depåladdning om många fordon, korta laddfönster och höga effekter – där en olastad lastbil på morgonen är ett produktionsstopp. Effektstyrning (peak shaving), avresetidsstyrning och lastbalansering avgör både driftsäkerheten och kostnaden, eftersom effektabonnemanget ofta är den största posten.</p>
+  <h3>AC, DC och MCS – kort</h3>
+  <ul>
+    <li><strong>AC</strong> – långsam laddning, sällan tillräckligt för tunga fordon på depå.</li>
+    <li><strong>CCS-DC</strong> – 50–400 kW, standard för dagens depåer med nattladdning.</li>
+    <li><strong>MCS</strong> – megawattladdning för långfärd längs väg; i serieproduktion från 2026.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>ChargeNode som driftpartner – vad ingår i helhetsansvaret</h2>
+  <p class="answer">Som laddoperatör tar ChargeNode helhetsansvar för depåns laddning – inte bara mjukvaran. Vi projekterar, väljer och installerar hårdvara, driftsätter, övervakar dygnet runt, styr effekt och kostnad, hanterar betalflöden, servar med egna tekniker och levererar rapportunderlag. Åkeriet får en part att vända sig till för hela kedjan.</p>
+  <ol class="helhet">
+    <li>Projektering och behovsanalys för depån</li>
+    <li>Nätanslutning och effektdimensionering</li>
+    <li>Hårdvaruval och inköp (OCPP-agnostiskt)</li>
+    <li>Installation och entreprenad via certifierade partners</li>
+    <li>Driftsättning och integration</li>
+    <li>24/7 övervakning och daglig drift</li>
+    <li>Effekt- och lastbalansering samt spotprisstyrning</li>
+    <li>Betal- och faktureringsflöden (egen flotta + gäster)</li>
+    <li>Service och jour med garanterad svarstid (SLA)</li>
+    <li>Hållbarhetsrapportering och skalning över tid</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Hårdvara vi arbetar med</h2>
+  <p class="answer">ChargeNode är hårdvaru-agnostisk och driftar ledande laddhårdvara via OCPP – ni är inte låsta till ett fabrikat. Det gör att ni kan välja rätt laddare för depån, återanvända befintlig hårdvara vid ett byte, och uppgradera i takt med att MCS och nya modeller kommer.</p>
+  <p>Vi arbetar bland annat med hårdvara från <strong>Kempower, Siemens, Alpitronic, CTEK och AmpSociety</strong>, samt egna produkter. Eftersom driften sker ovanpå OCPP kan vi ta över och drifta laddare ni redan äger, så länge de följer standarden.</p>
+  <p class="muted">Namngivna hårdvarupartners ska verifieras internt innan publicering.</p>
+</section>
+
+<section>
+  <h2>Betalning och fakturering</h2>
+  <p class="answer">Den egna flottan laddar via Fleet-konto eller RFID med samlad faktura och kostnad per fordon för intern uppföljning. Externa gäster laddar och betalar via app, betalkort eller QR utan registrering. Allt hanteras i samma plattform med separata, spårbara betalflöden.</p>
+  <ul>
+    <li><strong>Egen flotta:</strong> Fleet-konto, RFID, samlad månadsfaktura, kostnad per fordon och förare.</li>
+    <li><strong>Externa gäster:</strong> app, betalkort, QR utan app – valfri prissättning.</li>
+    <li><strong>Vidarefakturering:</strong> energikostnad kan fördelas korrekt mellan verksamheter.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Drift, service och SLA</h2>
+  <p class="answer">ChargeNode övervakar depåns laddning dygnet runt, larmar automatiskt vid fel och rycker ut med egna servicetekniker i hela Sverige. För verksamhetskritisk depådrift avtalas SLA med garanterad svarstid, så att fordonen är laddade i tid. Medelresponstiden i support är under 90 sekunder och 96 % av ärendena löses vid första kontakt.</p>
+  <p>Till skillnad från en ren mjukvaruplattform, där service ofta ligger hos en återförsäljare eller installatör, tar ChargeNode ansvaret inhouse – en part att ringa när något krånglar.</p>
+</section>
+
+<section>
+  <h2>TCO – vad kostar depåladdning per fordon och år?</h2>
+  <p class="answer">Den totala kostnaden (TCO) för depåladdning drivs främst av effektabonnemang, energi, hårdvara/installation och drift. Med peak shaving och spotprisstyrning kan energi- och effektkostnaden sänkas påtagligt – i rätt uppsatta depåer upp till cirka 12 % lägre energikostnad. Räkna på total kostnad över tid, inte bara på laddarpris.</p>
+  <p>Ett textexempel: en depå som flyttar laddningen till nattens lågpristimmar och kapar effekttoppar sänker både rörlig energikostnad och det abonnerade effekttaket – ofta så att en dyr nätförstärkning kan skjutas upp eller undvikas. <a href="https://chargenode.eu/roi-kalkylator">Räkna på er depå i TCO-kalkylatorn</a>.</p>
+</section>
+
+<section>
+  <h2>Jämförelseguide: så väljer du laddoperatör för depå</h2>
+  <p class="answer">Välj laddoperatör efter sju kriterier: hårdvaru-agnostik (OCPP), effekt- och MCS-beredskap, effekt- och spotprisstyrning, drift och SLA, betallösning, hållbarhetsrapportering samt skalbarhet. En operatör som äger hela kedjan inhouse ger lägst driftrisk för verksamhetskritisk trafik.</p>
+  <table>
+    <thead><tr><th>Kriterium</th><th>ChargeNode</th><th>Varför det spelar roll</th></tr></thead>
+    <tbody>
+      <tr><td>Hårdvaru-agnostik / OCPP</td><td class="cn">Ja – driftar ledande hårdvara via OCPP</td><td>Ingen inlåsning; återanvänd befintlig hårdvara.</td></tr>
+      <tr><td>Effekt / MCS-beredskap</td><td class="cn">CCS-DC i drift; MCS-berett via partners</td><td>Täcker depå idag och långfärd framåt.</td></tr>
+      <tr><td>Effekt- &amp; spotprisstyrning</td><td class="cn">Ja – peak shaving + NordPool</td><td>Sänker effekt- och energikostnad.</td></tr>
+      <tr><td>Drift &amp; SLA</td><td class="cn">24/7 övervakning, egna tekniker, avtalad svarstid</td><td>Verksamhetskritisk drift tål inte stopp.</td></tr>
+      <tr><td>Betallösning</td><td class="cn">Fleet-konto, RFID, app, gästladdning</td><td>Egen flotta + externa gäster i en plattform.</td></tr>
+      <tr><td>Hållbarhetsrapportering</td><td class="cn">Underlag för GRI, CSRD, ETS2</td><td>Spårbara data per fordon och laddpunkt.</td></tr>
+      <tr><td>Skalbarhet</td><td class="cn">10 → 100+ laddpunkter utan plattformsbyte</td><td>Investeringen kan tas stegvis.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Kundcase</h2>
+  <p class="answer">ChargeNode driftar depå- och flottladdning för flera av Sveriges större transport- och industriaktörer, bland annat Jula, Volvo, Holmen, Bring och Scania.</p>
+  <div class="card">
+    <p style="font-size:1.1rem;line-height:1.5">”Med ChargeNode som CPO-partner har vi fått en plattform som erbjuder skalbarhet och enkelhet, och inte minst ett värdefullt bollplank när vi fortsatt utvecklar vår elektrifiering.”</p>
+    <p class="muted"><strong>Lennart Karlsson</strong> · VD, Jula Logistics</p>
+  </div>
+  <p class="muted">[Platshållare: OneMed och GreenStop E4 – lägg in godkänt citat + verifierade siffror (antal laddpunkter, fordon, resultat) innan publicering. Inga påhittade uppgifter.]</p>
+</section>
+
+<section>
+  <h2>Vanliga frågor om depåladdning</h2>
+  <dl>
+    <dt>Vilken laddoperatör ska ett åkeri välja för depåladdning av ellastbilar?</dt>
+    <dd>Välj en CPO som tar helhetsansvar: hårdvaru-agnostisk drift (OCPP), effekt- och spotprisstyrning, betalflöden för flotta och gäster samt 24/7 support med SLA. ChargeNode levererar hela kedjan inhouse.</dd>
+    <dt>Vad kostar depåladdning per lastbil och år?</dt>
+    <dd>Det beror på antal fordon, batteristorlek, laddfönster och elavtal. Största posterna är effekt och energi – båda sänks med peak shaving och spotprisstyrning. Räkna på TCO, inte bara hårdvarupris.</dd>
+    <dt>Behöver jag DC eller MCS för depåladdning?</dt>
+    <dd>De flesta return-to-base-depåer klarar sig med CCS-DC och smart styrning. MCS behövs främst för snabb laddning av långfärds-lastbil. ChargeNode driftar CCS-DC idag och är MCS-berett via partners.</dd>
+    <dt>Vad är skillnaden mellan en laddoperatör och en hårdvaruleverantör?</dt>
+    <dd>En hårdvaruleverantör tillverkar laddarna; en laddoperatör (CPO) ansvarar för drift, styrning, betalning och support. ChargeNode arbetar OCPP-agnostiskt ovanpå ledande hårdvara och tar helhetsansvaret.</dd>
+    <dt>Kan ChargeNode drifta hårdvara vi redan har?</dt>
+    <dd>Ja. ChargeNode är hårdvaru-agnostisk och driftar laddare som följer OCPP (1.6 eller senare). Oftast behöver ni inte byta hårdvara för att byta driftpartner.</dd>
+    <dt>Hur fungerar betalning för egen flotta jämfört med externa gäster?</dt>
+    <dd>Egen flotta laddar via Fleet-konto eller RFID med samlad faktura och kostnad per fordon. Externa gäster betalar via app, kort eller QR. Allt i samma plattform med separata betalflöden.</dd>
+    <dt>Vilken support och SLA ingår?</dt>
+    <dd>24/7 övervakning, automatiska larm och egna servicetekniker i hela Sverige med garanterad svarstid. Medelresponstid under 90 sekunder och 96 % löst vid första kontakt.</dd>
+    <dt>Hur skalar jag från 10 till 100+ laddpunkter?</dt>
+    <dd>Med dynamisk lastbalansering läggs fler laddpunkter till utan onödig uppgradering av elservisen. Plattformen är byggd för att växa från några till hundratals laddpunkter utan systembyte.</dd>
+    <dt>Hur hjälper depåladdning med hållbarhetsrapportering (CSRD/GRI/ETS2)?</dt>
+    <dd>ChargeNode ger spårbara data per fordon och laddpunkt – energi, sessioner och CO2 – som underlag för GRI- och CSRD-rapportering och för att hantera kostnadseffekter av ETS2. Rapporterna exporteras ur plattformen.</dd>
+  </dl>
+</section>
+
+<div class="cta">
+  <div style="font-size:1.3rem;font-weight:800">Ska ni elektrifiera en depå eller lastbilsflotta?</div>
+  <div style="color:#dfe8ec;margin-top:6px">ChargeNode tar helhetsansvaret – från projektering och hårdvara till drift, betalning och 24/7 support.</div>
+  <a href="https://chargenode.eu/kontakt">Boka ett samtal</a>
+</div>
+
+<footer>ChargeNode Europe AB · Neongatan 4B, 431 53 Mölndal · 010-205 10 55 · hej@chargenode.eu · Laddoperatör (CPO) för depåladdning av tunga ellastbilar, fordonsflottor och fastigheter.</footer>
+</main>
+</body>
+</html>
