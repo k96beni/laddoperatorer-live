@@ -77,6 +77,7 @@
     <a href="#marknad">Marknadsläget</a>
     <a href="#ekonomi">Ekonomi &amp; stöd</a>
     <a href="#landskap">Publikt landskap</a>
+    <a href="#modeller">Affärsmodeller</a>
     <a href="#depa">Kravbild depå</a>
     <a href="#smart">Smart flottstyrning</a>
     <a href="#styrning">Elpris &amp; effekt</a>
@@ -180,6 +181,20 @@
     <p>Den publika lastbilsladdningen i Sverige är fortfarande liten. I NOBIL finns idag <strong><span id="txtHd">107</span> publika DC-punkter</strong> i tung-trafik-kontext (MCS-uttag eller hög-effekts-DC hos logistik-/transportägare), varav bara <strong><span id="txtMcs">3</span> MCS-uttag</strong>. Landskapet domineras av dedikerade aktörer som Einride (egna flottstationer) och Milence (korridor-JV).</p>
     <div style="overflow-x:auto"><table><thead><tr><th>Operatör (publik tung-trafik-kontext)</th><th class="num">DC-punkter</th></tr></thead><tbody id="tblLandscape"><tr class=""><td>Einride</td><td class="num">52</td></tr><tr class=""><td>Milence</td><td class="num">20</td></tr><tr class=""><td>OKQ8</td><td class="num">8</td></tr><tr class=""><td>Ragn-Sells</td><td class="num">8</td></tr><tr class=""><td>GITO</td><td class="num">6</td></tr><tr class=""><td>E.ON</td><td class="num">4</td></tr><tr class=""><td>Circle K</td><td class="num">3</td></tr><tr class=""><td>Eways</td><td class="num">2</td></tr><tr class=""><td>BEV_R CHARGE</td><td class="num">2</td></tr><tr class=""><td>Jula Logistics</td><td class="num">2</td></tr></tbody></table></div>
     <p class="note"><strong>Viktig brasklapp:</strong> detta speglar bara <strong>publik</strong> laddning. <strong>Depåladdning – som är den stora tung-trafik-marknaden och ChargeNodes fokus – är i regel privat och finns inte i NOBIL.</strong> ChargeNode syns därför nära noll i publik data trots en aktiv depåverksamhet. Därför jämför vi nedan främst <strong>kapabilitet och erbjudande</strong>, inte publik marknadsandel. Metod: se längst ner.</p>
+  </section>
+
+  <section id="modeller">
+    <span class="tag"><span>Affärsmodeller</span></span>
+    <h2>Två sorters laddoperatörer för tung trafik</h2>
+    <p class="answer">Laddoperatörer för tung trafik delas i två grupper. <strong>(1) De som äger och driver egna laddnät</strong> – t.ex. Milence (korridor-MCS), Einride (egna flottstationer) och drivmedelsbolagen OKQ8, Circle K och Preem. <strong>(2) Driftpartner (CPO) åt tredje part</strong> som driftar laddning på en anläggning kunden själv äger – t.ex. ChargeNode, Monta och Virta. För ett åkeri som vill ladda på sin <strong>egen depå</strong> är det den andra modellen som är relevant: du äger anläggningen, driftpartnern sköter drift, styrning, betalning och service.</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Modell</th><th>Vad de gör</th><th>Exempel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Egna laddnät</strong> (vertikalt integrerade)</td><td>Äger och driver egna publika stationer eller egna flottstationer – laddning på <em>deras</em> mark/nät.</td><td>Milence, Einride, OKQ8, Circle K, Preem, Recharge</td></tr>
+        <tr class="cn"><td><strong>Driftpartner / CPO åt tredje part</strong></td><td>Driftar laddning på en anläggning som <em>kunden</em> äger (depå, fastighet) – kunden äger, operatören driftar.</td><td>ChargeNode, Monta, Virta, Waybler</td></tr>
+        <tr><td><strong>Verkar i båda modellerna</strong></td><td>Äger egna publika nät och driftar även åt tredje part.</td><td>Vattenfall InCharge, E.ON</td></tr>
+      </tbody></table></div>
+    <p>Det förklarar varför det publika landskapet domineras av nätägare (Einride, Milence, drivmedelsbolag): deras stationer är publika och syns i NOBIL. Depåladdning åt tredje part sker däremot på kundens egen mark och är oftast privat. <strong>ChargeNode är en driftpartner</strong> – och tar helhetsansvar för hela depåns laddning (se nedan), så att åkeriet äger sin infrastruktur men slipper driva den själv.</p>
+    <p class="note">Klassificering utifrån operatörernas publika affärsmodell (2026-07). Vissa aktörer verkar i båda modellerna; indelningen visar var tyngdpunkten ligger.</p>
   </section>
 
   <section id="depa">
@@ -289,6 +304,8 @@
       <p>Ja. Regionala elektrifieringspiloten (Energimyndigheten) ger upp till 50 % av projektkostnaden – 55 % i EU:s stödområden – för laddinfrastruktur för tunga transporter, med särskilt fokus på depå- och nattladdning. 2,5 mdkr är avsatt 2024–2026. ChargeNode hjälper till att identifiera och söka stöd i projekteringen.</p></details>
     <details><summary>Hur mycket kan smart laddstyrning sänka kostnaden per mil?</summary>
       <p>I ett illustrativt räkneexempel sänks energi- och effektkostnaden med cirka 30 % per mil (från ~30 till ~20 kr/mil) genom att ladda på lågpristimmar och kapa effekttoppar i stället för att ladda allt samtidigt vid ankomst. Faktiskt utfall beror på elavtal, effekttariff och flottans mönster – men en stor del av kostnaden är styrbar.</p></details>
+    <details><summary>Vad är skillnaden mellan en nätägande laddoperatör och en driftpartner?</summary>
+      <p>En nätägare (t.ex. Milence, Einride, OKQ8) äger och driver egna laddstationer – du laddar på deras mark och nät. En driftpartner (CPO) som ChargeNode driftar laddning på en anläggning som du själv äger, t.ex. din depå. För depåladdning vill du oftast äga infrastrukturen men slippa driva den – då är en driftpartner rätt modell.</p></details>
   </section>
 
   <section>
@@ -339,7 +356,8 @@ if(D.stamp){document.querySelectorAll('.upd').forEach(e=>{e.textContent=D.stamp;
  {"@type":"Question","name":"Vilken laddoperatör passar för åkeri och depåladdning?","acceptedAnswer":{"@type":"Answer","text":"Välj efter smart flottstyrning (avresetidsstyrning, peak shaving, spotprisoptimering, lastbalansering), serviceorganisation med känd åtgärdstid och helhetsansvar. ChargeNode är CPO-partner för depåer med egen serviceorganisation och en Fleet-plattform för flottor."}},
  {"@type":"Question","name":"Lönar sig eldrivna lastbilar jämfört med diesel?","acceptedAnswer":{"@type":"Answer","text":"Ja, sett till totalkostnad över tid. För modellår 2026 är eldrivna lastbilar i Sverige cirka 10–11 % billigare än diesel enligt ICCT, trots högre inköpspris, tack vare lägre energi- och driftkostnad. Fallande batteripriser och statligt stöd förbättrar kalkylen ytterligare."}},
  {"@type":"Question","name":"Finns det statligt stöd för att bygga depåladdning för lastbil?","acceptedAnswer":{"@type":"Answer","text":"Ja. Regionala elektrifieringspiloten (Energimyndigheten) ger upp till 50 procent av projektkostnaden, 55 procent i EU:s stödområden, för laddinfrastruktur för tunga transporter med fokus på depå- och nattladdning. Totalt 2,5 miljarder kronor är avsatt 2024–2026."}},
- {"@type":"Question","name":"Hur mycket kan smart laddstyrning sänka kostnaden per mil för en ellastbil?","acceptedAnswer":{"@type":"Answer","text":"I ett illustrativt räkneexempel sänks energi- och effektkostnaden med cirka 30 procent per mil (från runt 30 till runt 20 kronor per mil) genom att ladda på lågpristimmar och kapa effekttoppar i stället för att ladda allt samtidigt vid ankomst. Utfallet beror på elavtal, effekttariff och flottans laddmönster."}}
+ {"@type":"Question","name":"Hur mycket kan smart laddstyrning sänka kostnaden per mil för en ellastbil?","acceptedAnswer":{"@type":"Answer","text":"I ett illustrativt räkneexempel sänks energi- och effektkostnaden med cirka 30 procent per mil (från runt 30 till runt 20 kronor per mil) genom att ladda på lågpristimmar och kapa effekttoppar i stället för att ladda allt samtidigt vid ankomst. Utfallet beror på elavtal, effekttariff och flottans laddmönster."}},
+ {"@type":"Question","name":"Vad är skillnaden mellan en nätägande laddoperatör och en driftpartner för depåladdning?","acceptedAnswer":{"@type":"Answer","text":"En nätägare som Milence, Einride eller OKQ8 äger och driver egna laddstationer där du laddar på deras nät. En driftpartner (CPO) som ChargeNode driftar laddning på en anläggning som du själv äger, till exempel din depå – du äger infrastrukturen, operatören sköter drift, styrning, betalning och service."}}
 ]}
 </script>
 <script type="application/ld+json">
