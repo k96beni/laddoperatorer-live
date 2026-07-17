@@ -37,28 +37,6 @@
    "net": -7560
   }
  ],
- "cn_region": {
-  "Västsverige": {
-   "sites": 304,
-   "uttag": 3045
-  },
-  "Stockholm–Mälardalen": {
-   "sites": 427,
-   "uttag": 3173
-  },
-  "Sydsverige": {
-   "sites": 225,
-   "uttag": 1928
-  },
-  "Norrland & Dalarna": {
-   "sites": 123,
-   "uttag": 963
-  },
-  "Östra Götaland": {
-   "sites": 54,
-   "uttag": 535
-  }
- },
  "financials": {
   "years": [
    2022,
@@ -344,5 +322,21 @@
    "tp": null,
    "tpScope": "ingen profil"
   }
+ },
+ "reliability": {
+  "period": "Q2 2026",
+  "se_avg": 90.0,
+  "cn_total": 66,
+  "ops": [
+   {"name": "Milepost", "index": 91.7, "rank": 5, "stations": 350},
+   {"name": "ChargeNode", "index": 90.5, "rank": 16, "stations": 1113},
+   {"name": "Vattenfall InCharge", "index": 90.1, "rank": 31, "stations": 1055},
+   {"name": "Voltiva", "index": 89.8, "rank": 56, "stations": 591},
+   {"name": "Monta", "index": 89.8, "rank": 58, "stations": 482},
+   {"name": "Waybler", "index": 89.3, "rank": 61, "stations": 294},
+   {"name": "E.ON", "index": 89.1, "rank": 62, "stations": 370},
+   {"name": "Virta", "index": 88.7, "rank": 64, "stations": 612},
+   {"name": "Eways", "index": null, "rank": null, "stations": null}
+  ]
  }
 }
