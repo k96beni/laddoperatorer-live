@@ -304,7 +304,7 @@ new Chart(chartEbitda,{type:'bar',data:{labels:EB.map(c=>c.name),datasets:[{data
 
 /* Driftsäkerhet (Symbioen) */
 const REL=(D.reliability&&D.reliability.ops||[]).filter(o=>o.index!=null);
-if(REL.length){new Chart(chartReliability,{type:'bar',data:{labels:REL.map(o=>o.name),datasets:[{data:REL.map(o=>o.index),backgroundColor:REL.map(o=>o.name==='ChargeNode'?CN:GREY)}]},options:{indexAxis:'y',plugins:{legend:{display:false},title:{display:true,text:'Oberoende driftindex per operatör (Symbioen, '+D.reliability.period+' – rikssnitt '+String(D.reliability.se_avg).replace('.',',')+')'},tooltip:{callbacks:{afterLabel:c=>{const o=REL[c.dataIndex];return 'Rank #'+o.rank+' av '+(D.reliability.cn_total||66)+' · '+o.stations+' stationer';}}}},scales:{x:{min:0,max:95,title:{display:true,text:'index (0–100)'}}}}});}
+if(REL.length){new Chart(chartReliability,{type:'bar',data:{labels:REL.map(o=>o.name),datasets:[{data:REL.map(o=>o.index),backgroundColor:REL.map(o=>o.name==='ChargeNode'?CN:GREY)}]},options:{indexAxis:'y',plugins:{legend:{display:false},title:{display:true,text:'Oberoende driftindex per operatör (Symbioen, '+D.reliability.period+' – rikssnitt '+String(D.reliability.se_avg).replace('.',',')+')'},tooltip:{callbacks:{afterLabel:c=>{const o=REL[c.dataIndex];return 'Rank #'+o.rank+' av '+(D.reliability.cn_total||66)+' · '+o.stations+' stationer';}}}},scales:{x:{min:85,max:93,title:{display:true,text:'index (utsnitt 85–93 av skalan 0–100)'}}}}});}
 
 </script>
 
