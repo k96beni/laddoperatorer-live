@@ -88,7 +88,7 @@
   </nav>
 
   <div class="kpis">
-    <div class="kpi"><div class="n" id="kpiHd">107</div><div class="l">publika DC-punkter i tung-trafik-kontext (NOBIL)</div></div>
+    <div class="kpi"><div class="n" id="kpiHd">121</div><div class="l">publika DC-punkter i tung-trafik-kontext (NOBIL)</div></div>
     <div class="kpi"><div class="n" id="kpiMcs">3</div><div class="l">MCS-uttag (megawattladdning) publikt idag</div></div>
     <div class="kpi"><div class="n">1 000+</div><div class="l">ellastbilar för långfärd i Sverige – EU-ledande</div></div>
     <div class="kpi"><div class="n">Depå</div><div class="l">ChargeNodes fokus (return-to-base) – inte korridor/hårdvara</div></div>
@@ -178,8 +178,8 @@
   <section id="landskap">
     <span class="tag"><span>Publikt landskap</span></span>
     <h2>Hur ser den publika DC-laddningen för tung trafik ut?</h2>
-    <p>Den publika lastbilsladdningen i Sverige är fortfarande liten. I NOBIL finns idag <strong><span id="txtHd">107</span> publika DC-punkter</strong> i tung-trafik-kontext (MCS-uttag eller hög-effekts-DC hos logistik-/transportägare), varav bara <strong><span id="txtMcs">3</span> MCS-uttag</strong>. Landskapet domineras av dedikerade aktörer som Einride (egna flottstationer) och Milence (korridor-JV).</p>
-    <div style="overflow-x:auto"><table><thead><tr><th>Operatör (publik tung-trafik-kontext)</th><th class="num">DC-punkter</th></tr></thead><tbody id="tblLandscape"><tr class=""><td>Einride</td><td class="num">52</td></tr><tr class=""><td>Milence</td><td class="num">20</td></tr><tr class=""><td>OKQ8</td><td class="num">8</td></tr><tr class=""><td>Ragn-Sells</td><td class="num">8</td></tr><tr class=""><td>GITO</td><td class="num">6</td></tr><tr class=""><td>E.ON</td><td class="num">4</td></tr><tr class=""><td>Circle K</td><td class="num">3</td></tr><tr class=""><td>Eways</td><td class="num">2</td></tr><tr class=""><td>BEV_R CHARGE</td><td class="num">2</td></tr><tr class=""><td>Jula Logistics</td><td class="num">2</td></tr></tbody></table></div>
+    <p>Den publika lastbilsladdningen i Sverige är fortfarande liten. I NOBIL finns idag <strong><span id="txtHd">121</span> publika DC-punkter</strong> i tung-trafik-kontext (MCS-uttag eller hög-effekts-DC hos logistik-/transportägare), varav bara <strong><span id="txtMcs">3</span> MCS-uttag</strong>. Landskapet domineras av dedikerade aktörer som Einride (egna flottstationer) och Milence (korridor-JV).</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Operatör (publik tung-trafik-kontext)</th><th class="num">DC-punkter</th></tr></thead><tbody id="tblLandscape"><tr class=""><td>Einride</td><td class="num">52</td></tr><tr class=""><td>Milence</td><td class="num">34</td></tr><tr class=""><td>Ragn-Sells</td><td class="num">8</td></tr><tr class=""><td>OKQ8</td><td class="num">8</td></tr><tr class=""><td>GITO</td><td class="num">6</td></tr><tr class=""><td>E.ON</td><td class="num">4</td></tr><tr class=""><td>Circle K</td><td class="num">3</td></tr><tr class=""><td>Jula Logistics</td><td class="num">2</td></tr><tr class=""><td>BEV_R CHARGE</td><td class="num">2</td></tr><tr class=""><td>Eways</td><td class="num">2</td></tr></tbody></table></div>
     <p class="note"><strong>Viktig brasklapp:</strong> detta speglar bara <strong>publik</strong> laddning. <strong>Depåladdning – som är den stora tung-trafik-marknaden och ChargeNodes fokus – är i regel privat och finns inte i NOBIL.</strong> ChargeNode syns därför nära noll i publik data trots en aktiv depåverksamhet. Därför jämför vi nedan främst <strong>kapabilitet och erbjudande</strong>, inte publik marknadsandel. Metod: se längst ner.</p>
   </section>
 
@@ -345,7 +345,7 @@
 
 <footer><div class="wrap">Guide för laddning av tung trafik, sammanställd av ChargeNode. Källor: NOBIL (CC BY 4.0), operatörernas publika sidor, branschdata. Senast uppdaterad <span class="upd">2026-07-14</span>.</div></footer>
 
-<script id="data" type="application/json">{"stamp": "2026-08-01"}</script>
+<script id="data" type="application/json">{"stamp": "2026-09-01"}</script>
 <script>
 const D = JSON.parse(document.getElementById('data').textContent);
 if(D.stamp){document.querySelectorAll('.upd').forEach(e=>{e.textContent=D.stamp;});}
@@ -372,7 +372,7 @@ if(D.stamp){document.querySelectorAll('.upd').forEach(e=>{e.textContent=D.stamp;
 {"@context":"https://schema.org","@type":"Organization","name":"ChargeNode","url":"https://chargenode.eu","sameAs":["https://www.linkedin.com/company/chargenode"],"address":{"@type":"PostalAddress","streetAddress":"Neongatan 4B","postalCode":"431 53","addressLocality":"Mölndal","addressCountry":"SE"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dataset","name":"Publik DC-laddning i tung-trafik-kontext, Sverige 2026","description":"Publika DC-laddpunkter i tung-trafik-kontext (MCS eller hög-effekts-DC hos logistik-/transportägare), baserat på NOBIL API v3. Depåladdning är privat och ingår ej.","creator":{"@type":"Organization","name":"ChargeNode"},"temporalCoverage":"2026-08-01","isBasedOn":"https://nobil.no","license":"https://creativecommons.org/licenses/by/4.0/","keywords":["tung trafik","depåladdning","lastbilsladdning","MCS","DC-laddning","Sverige"]}
+{"@context":"https://schema.org","@type":"Dataset","name":"Publik DC-laddning i tung-trafik-kontext, Sverige 2026","description":"Publika DC-laddpunkter i tung-trafik-kontext (MCS eller hög-effekts-DC hos logistik-/transportägare), baserat på NOBIL API v3. Depåladdning är privat och ingår ej.","creator":{"@type":"Organization","name":"ChargeNode"},"temporalCoverage":"2026-09-01","isBasedOn":"https://nobil.no","license":"https://creativecommons.org/licenses/by/4.0/","keywords":["tung trafik","depåladdning","lastbilsladdning","MCS","DC-laddning","Sverige"]}
 </script>
 </body>
 </html>
